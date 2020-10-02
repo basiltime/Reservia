@@ -1,4 +1,92 @@
-
 body {
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
+    font-size: 8pt;
+	}
+
+/* ------------------NAVIGATION BAR START----------------------*/
+
+nav {
+	margin-top: 0%;
 }
+
+
+
+ul {
+	text-align: right;
+	
+}
+
+
+
+li {
+	
+	display: inline-block;
+	color: #0065FC;
+	padding: 3% 3% 0% 3%;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+
+li:hover {
+
+	border-top-style: solid;
+	border-top-color: #0065FC;
+}
+
+
+
+a:visited {
+
+	color: #000000;
+}
+
+
+
+a:active {
+	color: #000000;
+}
+
+
+/*-----------------LOGO-----------------------*/
+
+#logo {
+	width: 7%;
+	height: auto;
+	margin-left: 3%;
+}	
+	
+
+/*-----------------Search-----------------------*/
+
+
+
+.search {
+	line-height: 80%;
+	margin-left: 3%;
+
+
+}
+
+
+
+.search h3 {
+	letter-spacing: -1.3px;
+	word-spacing: .5px;
+	font-weight: 900;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+.search input {
+	border-radius: 8px;
+	height: 25px;
+}
+
+
