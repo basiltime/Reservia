@@ -1,276 +1,92 @@
+body {
+    font-family: 'Raleway';
+    font-size: 8pt;
+	}
+
+/* ------------------NAVIGATION BAR START----------------------*/
+
+nav {
+	margin-top: 0%;
+}
+
+
+
+ul {
+	text-align: right;
+	
+}
+
+
+
+li {
+	
+	display: inline-block;
+	color: #0065FC;
+	padding: 3% 3% 0% 3%;
+}
+
+
+
 a {
-	font-style: none;
 	text-decoration: none;
+}
+
+
+
+li:hover {
+
+	border-top-style: solid;
+	border-top-color: #0065FC;
+}
+
+
+
+a:visited {
+
 	color: #000000;
 }
 
-body {
-	font-family: arial;
-	font-size: .7em;
-	line-height: .5;
+
+
+a:active {
+	color: #000000;
 }
 
-.nav {
-	display: inline;
-	float: right;
-	padding: 0em 2em 0em 2em;
 
-}
+/*-----------------LOGO-----------------------*/
 
-h4 {
-	border-color: black;
-
-}
-
-.filt {
-	font-family: arial;
-	display: inline;
-	padding: 1em 1.7em 1em 1.7em;
+#logo {
+	width: 7%;
+	height: auto;
+	margin-left: 3%;
 }	
+	
 
-.filters {
-	font-family: arial;
-	display: inline;
-	padding: 1em 1.7em 1em 1.7em;
-	border-color: #9ea3a0;
-	border-width: 1px;
-	border-style: solid;
-	border-radius: 30px;
+/*-----------------Search-----------------------*/
+
+
+
+.search {
+	line-height: 80%;
+	margin-left: 3%;
+
 
 }
 
 
-.logo {
-	float: left;
-	display: flex;
-	height: 50%;
-}
 
-
-.accomodations {
-	padding: 1em 2em 1em 2em;
-}
-
-.container {
-	float: left;
-	background-color: #f2f2f2;
-	max-width: 63%;
-	border-radius: 20px;
-	margin-left: 3em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: space-between;
-}
-
-#accomhead {
-	width: 100%;
-	padding: 1em;
-}
-
-.article {
-	background-color: white;
-	border: 4px solid white;
-	max-width: 24%;
-	border-radius: 20px;
-	box-shadow: 2px 2px 2px 2px #ededed;
-	height: 130px;
-	display: flex;
-	flex-direction: column-reverse;
-	overflow: hidden;
-	margin: 2em;
-}
-
-.location {
+.search h3 {
+	letter-spacing: -1.3px;
+	word-spacing: .5px;
+	font-weight: 900;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
 
-
-
-
-
-.price {
-	width: 100%;
+.search input {
+	border-radius: 8px;
+	height: 25px;
 }
-
-	
-
-.photo {	
-	width: 100%;
-	object-fit: contain;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-}
-
-
-
-#showmore {
-	width: 100%;
-	padding: 1em 1em 1em 1em;
-
-}
-
-
-
-
-
-
-/* SECOND DIV */
-
-.containertwo {
-	float: right;
-	width: 30%;
-	background-color: #f2f2f2;
-	border-radius: 20px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-}
-
-
-
-.articletwo {
-	background-color: white;
-	border: 4px solid white;
-	max-width: 100%;
-	border-radius: 20px;
-	margin: 1em;
-	box-shadow: 2px 2px 2px 2px #ededed;
-	height: 100px;
-	display: flex;
-	flex-direction: row-reverse;
-	overflow: hidden;
-	justify-content: flex-end;
-}
-
-
-.phototwo {
-	max-width: 40%;	
-}
-
-
-.rightcolumn {
-	text-indent: 1em;
-}
-
-#mostpopular {
-	padding: 1em;
-}
-
-/* ACTIVITIES------------------------------------------- */
-
-
-#activitiescontainer {
-
-	padding: 8% 3% 8% 3%;
-	width: 100%;	
-	height: 300px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: flex-start;
-
-
-	
-}
-
-
-.activities {
-	width: 20%;
-	border-radius: 20px 20px 20px 20px;
-	box-shadow: 2px 2px 2px 2px #ededed;
-	
-}
-
-.actphoto {
-	width: 100%;
-	
-}
-
-#activitiescontainer div:nth-child(1), div:nth-child(4)  {
-	flex-basis: 100%;
-	overflow: hidden;
-}
-
-.actphoto1and4 {
-	width: 100%;
-	height: 90%;
-	
-}
-
-.activityname {
-	text-indent: 1em;
-}
-
-
-
-#activitiescontainer div:nth-child(2)   {
-	height: 55%;
-	overflow: hidden;
-
-
-
-
-}
-
-#activitiescontainer div:nth-child(3)   {
-	height: 35%;
-	overflow: hidden;
-
-
-
-}
-
-#activitiescontainer div:nth-child(5)   {
-	height: 37%;
-	overflow: hidden;
-
-
-
-
-}
-
-#activitiescontainer div:nth-child(6)   {
-	height: 53%;
-	overflow: hidden;
-
-}
-
-
-
-/* Footer Syling */
-
-footer {
-	width: 100%;
-	height: 175px;
-	display: flex;
-	flex-direction: column;
-	background-color: #ededed;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: left;
-
-}
-
-.footer {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-
-
-}
-
-
-
-.lifooter {
-	padding: 1em;
-}
-
-
-
-
 
 
