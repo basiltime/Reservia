@@ -209,9 +209,8 @@ input::placeholder { /*Styles placeholder text */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: visible;
-	position:relative;
-	overflow-x:hidden;
+
+
 
 
 
@@ -237,7 +236,6 @@ input::placeholder { /*Styles placeholder text */
 	font-weight: 500;
 	font-size: 1.2em;
 	background-color: white;
-	overflow: visible;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -309,7 +307,7 @@ input::placeholder { /*Styles placeholder text */
 /* ------------------------------Section 1------------------------------------ */
 
 
-/* Images */
+/* Section 1 Images */
 .section1 img{
 	width: 160px;
 	height: auto;
@@ -325,20 +323,28 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 1 CONTAINER w/ 6 DIVS  */
 
 .section1 {
+
 	
-	padding-top: 4em;
-	padding-bottom: 4em;
 	float: left;
-	width: 65%;
+	width: 600px;
+	height: 425px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background-color: #F2F2f2;
 	border-radius: 15px;
+	padding: 22px;
+	
 
 }
 
+.section1 h2 {
+	position: absolute;
+	left: 40px;
+	
 
+
+}
 
 /*  DIVS INSIDE OF SECTION 1 CONTAINER  */
 
@@ -350,12 +356,13 @@ input::placeholder { /*Styles placeholder text */
 	justify-content: center;
 	align-self: flex-end;
 	padding: .3em;
-	margin: 1em;
+	
 	background-color: white;
 	border-radius: 20px;
 
 
 }
+
 
 
 
@@ -380,6 +387,7 @@ input::placeholder { /*Styles placeholder text */
 	font-size: .8em;
 	text-indent: right;
 
+
 }
 
 
@@ -388,41 +396,139 @@ input::placeholder { /*Styles placeholder text */
 
 
 
+
+
+
+/*  -------------------------------  SECTION 2------------------------------------*/
+
+
+/* Section 2 Images */
+.section2 img {
+	width: 100px;
+	height: auto;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+	
+
+	
+
+
+
+}
 
 
 
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
-
-.section2 img {
-	width: 180px;
-	height: auto;
-
-}
-
-
-
-
 .section2 {
 	float: right;
 	width: 27%;
-	border: 1px solid black;
+	height: 425px;
+	border-radius: 15px;
 	display: flex;
-	flex-wrap: wrap;
+	padding: 2em;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	justify-content: space-around;
+	align-items: center;
+	background-color: #F2F2F2;
+
+
+}
+
+/*  DIVS INSIDE OF SECTION 2 CONTAINER  */
+
+.section2mostpop {
+	width: 270px;
+	height: 100px;
+	background-color: white;
+	display: flex;
+	padding: .3em;
+	border-radius: 15px;
+
+
+
+}
+
+.section2text {
+	margin-left: 1em;
+	width: 400px;
+
+}
+
+
+.section2 p {
+	font-size-adjust: smaller;
+	margin-left: .5em;
+}
+
+.section2 h3 {
+	font-size-adjust: smaller;
+	text-indent: right;
+	margin-left: .5em;
+}
+
+.section2 i {
+	font-size: .8em;
+	color: #0065FC;
+	font-size: .8em;
+	
+
+}
+
+#firststar {
+	margin-left: .5em;
+
 }
 
 
 
+/*-------------------------SECTION 3--------------------------*/
+
+.section3 {
+	border: 1px solid black;
+	width: 100%;
+	height: 300px;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em 0em 3em 0em;
+}
+
+
+/*-------------------------FOOTER--------------------------*/
+footer {
+	float: left;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding: 2em 2em 2em 2em;
+
+
+}
 
 
 
+.footcolumn {
+	
+	display: flex;
+	flex-direction: column;
 
 
 
+}
 
 
+.footcolumn a {
+	color: #000000;
+	padding-bottom: .75em;
+}
 
-
-
-
-
+.footcolumn h3 {
+	font-weight: 900;
+}
