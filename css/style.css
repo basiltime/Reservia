@@ -3,7 +3,18 @@ body {
     font-size: 8pt;
 	}
 
-/* ------------------NAVIGATION BAR START----------------------*/
+
+
+/* -- Blue #0065FC 
+
+   -- Lighter Blue #DEEBFF
+
+   -- Gray #F2F2F2
+
+----------------------*/
+
+
+/* ------------------ NAVIGATION BAR ----------------------*/
 
 nav {
 	margin-top: 0%;
@@ -29,6 +40,7 @@ li {
 
 a {
 	text-decoration: none;
+	color: #0065FC;
 }
 
 
@@ -53,20 +65,17 @@ a:active {
 }
 
 
-/*-----------------LOGO-----------------------*/
+/*----------------- LOGO -----------------------*/
 
-#logo {
-	width: 7%;
+#logo { /*Reservia Logo*/
+	width: 6.5%;
 	height: auto;
 	margin-left: 3%;
+	padding-bottom: 1em;
 }	
 	
 
-/*-----------------Search-----------------------*/
-
-
-
-.search {
+.underlogo {
 	line-height: 80%;
 	margin-left: 3%;
 
@@ -74,19 +83,346 @@ a:active {
 }
 
 
-
-.search h3 {
-	letter-spacing: -1.3px;
+.underlogo h3 {    /*---Styles header----*/
+	letter-spacing: -.5px;
 	word-spacing: .5px;
 	font-weight: 900;
-	font-size: 1.5em;
+	font-size: 1.46em;
 	font-weight: bold;
 }
 
 
-.search input {
-	border-radius: 8px;
-	height: 25px;
+/*-------------SEARCH BAR-----------------------*/
+
+#search {
+	display: flex;
+
+
+
+
 }
+
+/*---------- Map Icon ------------*/
+
+#search i {
+	background-color: #F2F2f2;
+	height: 37px;
+	width: 37px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+
+/*---------- Input Box ------------*/
+
+#search input { /* Styles input box */
+	border-radius-bottom-right: 8px;
+	border-radius-bottom-left: 8px;
+	width: auto;
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-indent: 1em;
+	font-size: 1.2em;
+	border-style: none;
+	outline: none;
+	border-top: .2px solid #F2F2f2;
+	border-bottom: .2px solid #F2F2f2;
+	
+
+}
+
+input:focus { /*Gets rid of default outline and borders on click */
+	border-style: none;
+	outline: none;
+	font-size: 1.2em;
+	
+}
+
+
+input::placeholder { /*Styles placeholder text */
+	text-indent: 1em;
+	font-weight: 500;
+	font-size: 1em;
+	color: black;
+
+}
+
+
+/*---------- Search Button------------*/
+
+#search button {
+	background-color: #0065FC;
+	height: 37px;
+	width: 62px;
+	margin: 0px;
+	padding: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 1.2em;
+	color: white;
+	border-style: none;
+
+
+
+}
+
+
+
+/*-------------FILTERS---------------*/
+
+
+
+
+.filters { /* Container for filters including filter button*/
+	display: flex;
+	align-items: center;
+	padding: 15px 15px 15px;
+	margin-left: 3%;
+
+	
+
+
+}
+
+
+.filters i { /*   JUST THE ICONS    */
+	color: #0065FC;
+	background-color: #DEEBFF;
+	height: 11px;
+	width: 11px;
+	padding: .65em;
+	font-size: 1.2em;
+	border-radius: 100%;
+	border-style: 10px solid #DEEBFF;
+	margin-right: .5em;
+	border: 2px solid #DEEBFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: visible;
+	position:relative;
+	overflow-x:hidden;
+
+
+
+	}
+
+.option {  /* Filter button containers (includes the icon and text)  */
+	margin: 1em;
+	border: 1.5px solid #E8E8E8;
+	border-radius: 25px;
+	padding: 0em 1em 0em 0em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+
+}
+
+
+
+.filters button {  /* Styles the text portion of the filter buttons */
+	font-weight: 500;
+	font-size: 1.2em;
+	background-color: white;
+	overflow: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+
+
+.option:active { /* Keeps text black on click */
+	color: black;
+}
+
+.filtertext { /* Styles text that says Filter left of the buttons */
+	padding-right: 10px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+
+
+/* "more than 500 accomodations...." */
+.info {
+	margin-left: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+	width: 300px;
+
+
+}
+
+
+
+
+
+
+
+
+#icon {
+	width: 5.3px;
+	height: 5.3px;
+	border-radius: 25px;
+	padding: .7em;
+	font-size: .7em;
+	color: #0065FC;
+	border: 1px solid #F2F2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+
+
+
+
+
+.info p {
+	padding: 1em;
+
+	
+	
+}
+
+/* ------------------------------Section 1------------------------------------ */
+
+
+/* Images */
+.section1 img{
+	width: 160px;
+	height: auto;
+	overflow: hidden;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+
+	
+
+}
+
+
+/*  SECTION 1 CONTAINER w/ 6 DIVS  */
+
+.section1 {
+	
+	padding-top: 4em;
+	padding-bottom: 4em;
+	float: left;
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #F2F2f2;
+	border-radius: 15px;
+
+}
+
+
+
+/*  DIVS INSIDE OF SECTION 1 CONTAINER  */
+
+.section1accoms {
+	line-height: .5em;
+	height: 140px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: flex-end;
+	padding: .3em;
+	margin: 1em;
+	background-color: white;
+	border-radius: 20px;
+
+
+}
+
+
+
+.staricon {
+	color: #0065FC;
+	margin-left: .5em;
+	padding-bottom: .4em;
+}
+
+.section1 p {
+	font-size-adjust: smaller;
+	margin-left: .5em;
+}
+
+.section1 h3 {
+	font-size-adjust: smaller;
+	text-indent: right;
+	margin-left: .5em;
+}
+
+.section1 i {
+	font-size: .8em;
+	text-indent: right;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*  SECTION 2 CONTAINER w/ 3 DIVS  */
+
+.section2 img {
+	width: 180px;
+	height: auto;
+
+}
+
+
+
+
+.section2 {
+	float: right;
+	width: 27%;
+	border: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
