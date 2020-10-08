@@ -198,14 +198,16 @@ input::placeholder { /*Styles placeholder text */
 .filters i { /*   JUST THE ICONS    */
 	color: #0065FC;
 	background-color: #DEEBFF;
-	height: 11px;
-	width: 11px;
-	padding: .65em;
+	height: 11.5px;
+	width: 11.5px;
+	padding: .75em;
 	font-size: 1.2em;
 	border-radius: 100%;
 	border-style: 10px solid #DEEBFF;
 	margin-right: .5em;
 	border: 2px solid #DEEBFF;
+	position: relative;
+	left: -2px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -221,6 +223,7 @@ input::placeholder { /*Styles placeholder text */
 	border: 1.5px solid #E8E8E8;
 	border-radius: 25px;
 	padding: 0em 1em 0em 0em;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -306,17 +309,15 @@ input::placeholder { /*Styles placeholder text */
 
 /* ------------------------------Section 1------------------------------------ */
 
-
-/* Section 1 Images */
-.section1 img{
-	width: 160px;
-	height: auto;
-	overflow: hidden;
-	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
+.accommodations {
+	width: 550px;
+	height: 425px;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding: 20px;
+	position: relative;
 
 	
-
 }
 
 
@@ -326,21 +327,18 @@ input::placeholder { /*Styles placeholder text */
 
 	
 	float: left;
-	width: 600px;
-	height: 425px;
+	width: 550px;
+	height: 320px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	background-color: #F2F2f2;
-	border-radius: 15px;
-	padding: 22px;
+	justify-content: space-between;
+	letter-spacing: -0.5px;
 	
 
 }
 
 .section1 h2 {
-	position: absolute;
-	left: 40px;
+	
 	
 
 
@@ -349,50 +347,87 @@ input::placeholder { /*Styles placeholder text */
 /*  DIVS INSIDE OF SECTION 1 CONTAINER  */
 
 .section1accoms {
-	line-height: .5em;
-	height: 140px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-self: flex-end;
-	padding: .3em;
 	
+	width: 160px;
+   height: 130px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   overflow: hidden;
+	line-height: : 0.8em;
 	background-color: white;
 	border-radius: 20px;
+	border: 3px solid white;
+	position: relative;
+
+
 
 
 }
 
 
 
+/* Section 1 Images */
+.section1 img{
+	width: 160px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	position: absolute;
+	bottom: 55px;
 
-.staricon {
-	color: #0065FC;
+	
+
+}
+
+
+#hotelchezimg {
+	position: relative;
+	top: 0px;
+	max-height: 75px;
+}
+
+.section1text {
+
 	margin-left: .5em;
 	padding-bottom: .4em;
+
+
+	
 }
 
 .section1 p {
-	font-size-adjust: smaller;
+	font-size: 0.8em;
 	margin-left: .5em;
+	line-height: .5%;
+
 }
 
 .section1 h3 {
-	font-size-adjust: smaller;
+	font-size: .75em;
 	text-indent: right;
 	margin-left: .5em;
+	padding-top: .25em;
+	padding-bottom: .3em;
+	font-size: 1em;
+	line-height: .5%
+
 }
 
 .section1 i {
-	font-size: .8em;
-	text-indent: right;
+	font-size: .75em;
+	line-height: 20%;
+	margin-top: 4px;
+	color: #0065FC;
+
+
 
 
 }
 
+.section1 i:nth-of-type(1) {
+	margin-left: .5em;
 
-
-
+}
 
 
 
@@ -404,10 +439,9 @@ input::placeholder { /*Styles placeholder text */
 
 /* Section 2 Images */
 .section2 img {
-	width: 100px;
-	height: auto;
+	height: 120px;
 	border-top-left-radius: 15px;
-	border-bottom-left-radius: 15px;
+
 
 	
 
@@ -417,42 +451,70 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
-
+#section1andsection2 {
+	height: 450px;
+	
+	display: flex;
+	justify-content: space-around;
+}
 
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
 .section2 {
-	float: right;
 	width: 27%;
 	height: 425px;
 	border-radius: 15px;
-	display: flex;
-	padding: 2em;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
 	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	
 
 
+
+
+}
+
+/*  SECTION 2 "MOST POPULAR" text with chart icon  */
+.section2 i:nth-of-type(1) {
+	color: black;
+	position: relative;
+	top: 10px;
+	right: 10px;
+	
+}
+
+
+.section2 h2:nth-of-type(1) {
+	
 }
 
 /*  DIVS INSIDE OF SECTION 2 CONTAINER  */
 
 .section2mostpop {
-	width: 270px;
 	height: 100px;
-	background-color: white;
-	display: flex;
-	padding: .3em;
-	border-radius: 15px;
+	width: 275px;
 
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	line-height: : 0.8em;
+	background-color: white;
+	border-radius: 20px;
+	border: 3px solid white;
+	
+	
 
 
 }
 
 .section2text {
-	margin-left: 1em;
-	width: 400px;
+	width: 200px;
+	white-space: nowrap;
+	margin-right: 15px;
+
+
 
 }
 
