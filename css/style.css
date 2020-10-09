@@ -307,11 +307,22 @@ input::placeholder { /*Styles placeholder text */
 	
 }
 
-/* ------------------------------Section 1------------------------------------ */
+
+
+/* ---------------------- Section 1 AND Section 2 div ------------------------- */
+
+#section1andsection2 {
+	height: 450px;
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+
 
 .accommodations {
 	width: 550px;
-	height: 425px;
+
 	background-color: #F2F2F2;
 	border-radius: 15px;
 	padding: 20px;
@@ -321,7 +332,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-/*  SECTION 1 CONTAINER w/ 6 DIVS  */
+/*  SECTION 1  -------- ACCOMMODATIONS ---------  CONTAINER w/ 6 DIVS  */
 
 .section1 {
 
@@ -420,8 +431,6 @@ input::placeholder { /*Styles placeholder text */
 	color: #0065FC;
 
 
-
-
 }
 
 .section1 i:nth-of-type(1) {
@@ -442,26 +451,14 @@ input::placeholder { /*Styles placeholder text */
 	height: 120px;
 	border-top-left-radius: 15px;
 
-
-	
-
-	
-
-
-
 }
 
-#section1andsection2 {
-	height: 450px;
-	
-	display: flex;
-	justify-content: space-around;
-}
+
 
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
 .section2 {
-	width: 27%;
-	height: 425px;
+	width: 300px;
+
 	border-radius: 15px;
 	background-color: #F2F2F2;
 	display: flex;
@@ -471,24 +468,22 @@ input::placeholder { /*Styles placeholder text */
 	padding: 20px;
 	
 
-
-
-
 }
 
 /*  SECTION 2 "MOST POPULAR" text with chart icon  */
-.section2 i:nth-of-type(1) {
-	color: black;
-	position: relative;
-	top: 10px;
-	right: 10px;
-	
+
+#section2header {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
 }
 
 
-.section2 h2:nth-of-type(1) {
-	
-}
+
+
 
 /*  DIVS INSIDE OF SECTION 2 CONTAINER  */
 
@@ -504,10 +499,13 @@ input::placeholder { /*Styles placeholder text */
 	border-radius: 20px;
 	border: 3px solid white;
 	
-	
-
-
 }
+
+
+#section2header i {
+	font-size: 1.5em;
+}
+
 
 .section2text {
 	width: 200px;
@@ -530,18 +528,31 @@ input::placeholder { /*Styles placeholder text */
 	margin-left: .5em;
 }
 
-.section2 i {
+.section2text i {
 	font-size: .8em;
 	color: #0065FC;
-	font-size: .8em;
-	
+	margin-right: -2px;
 
 }
 
-#firststar {
+#firststardiv1 {
+
 	margin-left: .5em;
-
+	
 }
+
+#firststardiv2 {
+
+	margin-left: .5em;
+	
+}
+
+#firststardiv3 {
+
+	margin-left: .5em;
+	
+}
+
 
 
 
@@ -553,10 +564,39 @@ input::placeholder { /*Styles placeholder text */
 	height: 300px;
 	float: left;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 3em 0em 3em 0em;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 20px;
+	overflow: hidden;
+
 }
+
+.section3 div {       /*------------------- MAKE ALL DIVS 210PX WIDE , HIDES OVERFLOW---------------*/  
+	width: 210px;
+	overflow: hidden;
+	
+}
+
+
+
+
+.section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV  -------------------*/  
+	display: flex;
+	justify-content: center;
+	border-radius: 15px;
+
+}
+
+.section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
+
+
+	border-radius: 15px;
+	overflow: hidden;
+	
+
+}
+
+
 
 
 /*-------------------------FOOTER--------------------------*/
