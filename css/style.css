@@ -567,13 +567,14 @@ input::placeholder { /*Styles placeholder text */
 	flex-direction: column;
 	flex-wrap: wrap;
 	margin: 20px;
-	overflow: hidden;
+	
 
 }
 
 .section3 div {       /*------------------- MAKE ALL DIVS 210PX WIDE , HIDES OVERFLOW---------------*/  
-	width: 210px;
+	width: 215px;
 	overflow: hidden;
+	border-radius: 15px;
 	
 }
 
@@ -587,15 +588,23 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
+
 .section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
+	height: 200px;
+
+		
 
 
-	border-radius: 15px;
-	overflow: hidden;
-	
+
 
 }
 
+#image2 {
+	height: auto;
+	width: 215px;
+	position: bottom 1px;
+
+}
 
 
 
