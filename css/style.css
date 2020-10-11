@@ -313,9 +313,10 @@ input::placeholder { /*Styles placeholder text */
 
 #section1andsection2 {
 	height: 450px;
-	
+	max-width: 1500px;
 	display: flex;
 	justify-content: space-around;
+	border: 1px solid black;
 }
 
 
@@ -556,60 +557,146 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-/*-------------------------SECTION 3--------------------------*/
+/*----------------------------------------------SECTION 3----------------------------------------------------*/
 
 .section3 {
 	border: 1px solid black;
-	width: 100%;
+	max-width: 1500px;
 	height: 300px;
-	float: left;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	margin: 20px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 100px 20px 100px;
+  
+
 	
 
 }
 
-.section3 div {       /*------------------- MAKE ALL DIVS 210PX WIDE , HIDES OVERFLOW---------------*/  
-	width: 215px;
+.section3 img {
+	border-radius: 15px;
+
+}
+
+
+.section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
 	overflow: hidden;
 	border-radius: 15px;
-	
+
+
 }
 
 
 
 
-.section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV  -------------------*/  
-	display: flex;
-	justify-content: center;
-	border-radius: 15px;
+.section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
+  	height: 315px;
+  	width: 200px;
 
 }
+
+#image1 {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+  
+  
+  
+}
+
 
 
 .section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
-	height: 200px;
 
-		
+  height: 40%;
+  width: 200px;
 
-
-
+  
 
 }
+
+
 
 #image2 {
-	height: auto;
-	width: 215px;
-	position: bottom 1px;
+  position: relative;
+ 
 
 }
+
+.section3 > div:nth-of-type(3) { /*------------------- THIRD DIV  -------------------*/ 
+
+
+  height: 40%;
+  width: 200px;
+  
+
+}
+
+
+
+#image3 {
+  position: relative;
+
+
+}
+
+.section3 > div:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
+	
+  	height: 315px;
+}
+
+#image4 {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+  
+  
+  
+}
+
+
+
+
+
+.section3 > div:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
+  height: 40%;
+  width: 200px;
+  
+
+}
+
+
+
+#image5 {
+  position: relative;
+
+
+}
+
+
+.section3 > div:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
+  height: 40%;
+  width: 200px;
+  
+
+}
+
+
+
+#image6 {
+  position: relative;
+
+
+}
+
 
 
 
 /*-------------------------FOOTER--------------------------*/
 footer {
+
 	float: left;
 	display: flex;
 	flex-direction: column;
