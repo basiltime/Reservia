@@ -313,10 +313,11 @@ input::placeholder { /*Styles placeholder text */
 
 #section1andsection2 {
 	height: 450px;
-	max-width: 1500px;
+	max-width: 1200px;
 	display: flex;
-	justify-content: space-around;
-	border: 1px solid black;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	
 }
 
 
@@ -560,30 +561,36 @@ input::placeholder { /*Styles placeholder text */
 /*----------------------------------------------SECTION 3----------------------------------------------------*/
 
 .section3 {
-	border: 1px solid black;
-	max-width: 1500px;
-	height: 300px;
+	
+max-width: 1200px;
+	height: 315px;
 	display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px 100px 20px 100px;
-  
+  flex-flow: column wrap;
 
+  align-content: space-between;
+  justify-content: space-between;
+  
+ 
+ 
 	
 
 }
 
-.section3 img {
-	border-radius: 15px;
 
+
+.section3 p {
+	margin-left: 1em;
 }
 
 
 .section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
 	overflow: hidden;
 	border-radius: 15px;
+	border-color: #f2f2f2;
+	box-shadow: 2px 2px 2px 2px #f2f2f2;
+
+	
+	
 
 
 }
@@ -594,6 +601,11 @@ input::placeholder { /*Styles placeholder text */
 .section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
   	height: 315px;
   	width: 200px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: left;
+ 	justify-content: flex-end;
+
 
 }
 
@@ -602,16 +614,19 @@ input::placeholder { /*Styles placeholder text */
   width: 200px;
   object-fit: cover;
   
-  
-  
 }
 
 
 
 .section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
 
-  height: 40%;
-  width: 200px;
+  	height: 50%;
+  	width: 200px;
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: flex-end;
+
 
   
 
@@ -620,31 +635,47 @@ input::placeholder { /*Styles placeholder text */
 
 
 #image2 {
-  position: relative;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
  
 
 }
 
-.section3 > div:nth-of-type(3) { /*------------------- THIRD DIV  -------------------*/ 
+	
+
+
+.section3 > div:nth-of-type(3) { /*------------------- THIRD DIV  ---------------------------------------------------------------------------------------------------------------------------------------*/ 
 
 
   height: 40%;
   width: 200px;
-  
+  display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: flex-end;
+
+
 
 }
 
 
 
 #image3 {
-  position: relative;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 
 
 }
 
 .section3 > div:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
-	
+	width: 200px;
   	height: 315px;
+  	display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: flex-end;
 }
 
 #image4 {
@@ -663,6 +694,10 @@ input::placeholder { /*Styles placeholder text */
 .section3 > div:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
   height: 40%;
   width: 200px;
+  display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: flex-end;
   
 
 }
@@ -670,15 +705,21 @@ input::placeholder { /*Styles placeholder text */
 
 
 #image5 {
-  position: relative;
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
 
 
 }
 
 
 .section3 > div:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
-  height: 40%;
+  height: 50%;
   width: 200px;
+  display: flex;
+ 	flex-direction: column;
+ 	align-items: left;
+ 	justify-content: flex-end;
   
 
 }
@@ -686,7 +727,9 @@ input::placeholder { /*Styles placeholder text */
 
 
 #image6 {
-  position: relative;
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
 
 
 }
@@ -706,6 +749,7 @@ footer {
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	padding: 2em 2em 2em 2em;
+	margin-top: 75px;
 
 
 }
