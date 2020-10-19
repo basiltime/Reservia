@@ -313,135 +313,95 @@ input::placeholder { /*Styles placeholder text */
 
 #section1andsection2 {
 	height: 450px;
-	max-width: 1200px;
+	width: 1100px;
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 100px;
+	margin: 0px 20px 100px 20px;
+
+
 	
 }
 
 
-
-.accommodations {
-	width: 550px;
-
-	background-color: #F2F2F2;
-	border-radius: 15px;
-	padding: 20px;
-	position: relative;
-
-	
-}
 
 
 /*  SECTION 1  -------- ACCOMMODATIONS ---------  CONTAINER w/ 6 DIVS  */
 
 .section1 {
-
-	
-	float: left;
-	width: 550px;
-	height: 320px;
+	width: 650px;
+	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	letter-spacing: -0.5px;
-	
+	justify-content: space-around;
+	align-items: center;
+	background-color: #F2F2F2;
+	border-radius: 15px;
+	padding: 20px;
+
+}
+
+
+
+/*  ARTICLES INSIDE OF SECTION 1  */
+
+
+.section1 article {
+	width: 175px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border: 2px solid white;
+	overflow: hidden;
+	line-height: 1px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px 2px #f2f2f2;
+	flex-basis: 1;
+	background-color: white;
 
 }
 
 .section1 h2 {
-	
-	
-
-
+	width: 100%;
+	margin: 20px;
 }
-
-/*  DIVS INSIDE OF SECTION 1 CONTAINER  */
-
-.section1accoms {
-	
-	width: 160px;
-   height: 130px;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-end;
-   overflow: hidden;
-	line-height: : 0.8em;
-	background-color: white;
-	border-radius: 20px;
-	border: 3px solid white;
-	position: relative;
-
-
-
-
-}
-
 
 
 /* Section 1 Images */
 .section1 img{
-	width: 160px;
-	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
-	position: absolute;
-	bottom: 55px;
-
+	height: 100%;
+	width: 120%;
+	object-fit: cover;
 	
 
 }
 
-
-#hotelchezimg {
-	position: relative;
-	top: 0px;
-	max-height: 75px;
+.rating {
+	display: inline;
+	margin-top: 1px;
+	color: #0065FC;
+	margin-bottom: 5px;
 }
 
-.section1text {
+.rating i:nth-child(1) {
+	margin-left: 5px;
 
-	margin-left: .5em;
-	padding-bottom: .4em;
-
-
-	
-}
-
-.section1 p {
-	font-size: 0.8em;
-	margin-left: .5em;
-	line-height: .5%;
 
 }
 
 .section1 h3 {
-	font-size: .75em;
-	text-indent: right;
-	margin-left: .5em;
-	padding-top: .25em;
-	padding-bottom: .3em;
-	font-size: 1em;
-	line-height: .5%
-
+	margin-left: 5px;
 }
 
-.section1 i {
-	font-size: .75em;
-	line-height: 20%;
-	margin-top: 4px;
-	color: #0065FC;
-
-
+.section1 p {
+	margin-left: 5px;
 }
 
-.section1 i:nth-of-type(1) {
-	margin-left: .5em;
+.section1 > h3:last-of-type {
+	width: 100%;
+	margin-left: 20px;
 
-}
-
-
-
+}	
 
 
 
@@ -459,6 +419,7 @@ input::placeholder { /*Styles placeholder text */
 
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
 .section2 {
+	height: 100%;
 	width: 300px;
 
 	border-radius: 15px;
@@ -562,16 +523,17 @@ input::placeholder { /*Styles placeholder text */
 
 .section3 {
 	
-max-width: 1200px;
-	height: 315px;
+max-width: 1100px;
+min-width: 1000px;
+	height: 355px;
 	display: flex;
   flex-flow: column wrap;
 
   align-content: space-between;
   justify-content: space-between;
-  
- 
- 
+
+  margin: 0px 20px 100px 20px;
+
 	
 
 }
@@ -599,8 +561,8 @@ max-width: 1200px;
 
 
 .section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
-  	height: 315px;
-  	width: 200px;
+  	height: 355px;
+  	width: 235px;
   	display: flex;
   	flex-direction: column;
   	align-items: left;
@@ -611,7 +573,7 @@ max-width: 1200px;
 
 #image1 {
   height: 100%;
-  width: 200px;
+  width: 235px;
   object-fit: cover;
   
 }
@@ -621,7 +583,8 @@ max-width: 1200px;
 .section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
 
   	height: 50%;
-  	width: 200px;
+  	width: 235px;
+
  	display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -649,7 +612,8 @@ max-width: 1200px;
 
 
   height: 40%;
-  width: 200px;
+  width: 235px;
+
   display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -670,8 +634,9 @@ max-width: 1200px;
 }
 
 .section3 > div:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
-	width: 200px;
-  	height: 315px;
+	width: 235px;
+
+  	height: 355px;
   	display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -680,7 +645,8 @@ max-width: 1200px;
 
 #image4 {
   height: 100%;
-  width: 200px;
+  width: 235px;
+
   object-fit: cover;
   
   
@@ -693,7 +659,8 @@ max-width: 1200px;
 
 .section3 > div:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
   height: 40%;
-  width: 200px;
+  width: 235px;
+
   display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -706,7 +673,8 @@ max-width: 1200px;
 
 #image5 {
   height: 100%;
-  width: 200px;
+  width: 235px;
+
   object-fit: cover;
 
 
@@ -715,7 +683,8 @@ max-width: 1200px;
 
 .section3 > div:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
   height: 50%;
-  width: 200px;
+  width: 235px;
+
   display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -728,7 +697,8 @@ max-width: 1200px;
 
 #image6 {
   height: 100%;
-  width: 200px;
+  width: 235px;
+
   object-fit: cover;
 
 
