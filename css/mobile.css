@@ -1,0 +1,645 @@
+body {
+    font-family: 'Raleway';
+    font-size: 8pt;
+    
+	}
+
+
+
+/* -- Blue #0065FC 
+
+   -- Lighter Blue #DEEBFF
+
+   -- Gray #F2F2F2
+
+----------------------*/
+
+
+/* ------------------ NAVIGATION BAR ----------------------*/
+
+nav {
+
+	width: 300px;
+
+}
+
+
+ul {
+	display: flex;
+	flex-direction: row;
+	width: 300px;
+
+}
+
+nav > ul > li:nth-of-type(1) {
+	width: 150px;
+	order: 2;
+	flex-basis: 1;
+}
+
+nav > ul > li:nth-of-type(2) {
+	width: 150px;
+	order: 3;
+	flex-basis: 1;
+
+
+}
+
+nav > ul > li:nth-of-type(3) {
+	width: 300px;
+	order: 1;
+	flex-basis: 2;
+}
+
+
+a {
+	text-decoration: none;
+	color: #0065FC;
+}
+
+
+
+li:hover {
+
+	border-top-style: solid;
+	border-top-color: #0065FC;
+}
+
+
+
+a:visited {
+
+	color: #000000;
+}
+
+
+
+a:active {
+	color: #000000;
+}
+
+
+/*----------------- LOGO -----------------------*/
+
+#logo { /*Reservia Logo*/
+	width: 80px;
+	height: auto;
+	margin-left: 3%;
+	padding-bottom: 1em;
+}	
+	
+
+.underlogo {
+	line-height: 80%;
+	margin-left: 3%;
+
+
+}
+
+
+.underlogo h3 {    /*---Styles header----*/
+	letter-spacing: -.5px;
+	word-spacing: .5px;
+	font-weight: 900;
+	font-size: 1.46em;
+	font-weight: bold;
+}
+
+
+/*-------------SEARCH BAR-----------------------*/
+
+#search {
+	display: flex;
+
+
+
+
+}
+
+/*---------- Map Icon ------------*/
+
+#search i {
+	background-color: #F2F2f2;
+	height: 37px;
+	width: 37px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 1.2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+
+/*---------- Input Box ------------*/
+
+#search input { /* Styles input box */
+	border-radius-bottom-right: 8px;
+	border-radius-bottom-left: 8px;
+	width: auto;
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-indent: 1em;
+	font-size: 1.2em;
+	border-style: none;
+	outline: none;
+	border-top: .2px solid #F2F2f2;
+	border-bottom: .2px solid #F2F2f2;
+	
+
+}
+
+input:focus { /*Gets rid of default outline and borders on click */
+	border-style: none;
+	outline: none;
+	font-size: 1.2em;
+	
+}
+
+
+input::placeholder { /*Styles placeholder text */
+	text-indent: 1em;
+	font-weight: 500;
+	font-size: 1em;
+	color: black;
+
+}
+
+
+/*---------- Search Button------------*/
+
+#search button {
+	background-color: #0065FC;
+	height: 37px;
+	width: 62px;
+	margin: 0px;
+	padding: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	font-size: 1.2em;
+	color: white;
+	border-style: none;
+
+
+
+}
+
+
+
+/*-------------FILTERS---------------*/
+
+
+
+
+.filters { /* Container for filters including filter button*/
+	margin: 20px 0px 20px 0px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	
+
+
+}
+
+
+.filters i { /*   JUST THE ICONS    */
+	color: #0065FC;
+	background-color: #DEEBFF;
+	height: 8.5px;
+	width: 8.5px;
+	padding: .75em;
+	font-size: 1em;
+	border-radius: 100%;
+	border-style: 10px solid #DEEBFF;
+	margin-right: .5em;
+	border: 2px solid #DEEBFF;
+	position: relative;
+	left: -2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+
+
+	}
+
+.option {  /* Filter button containers (includes the icon and text)  */
+	margin: 1em 1em 1em 0em;
+	border: 1.5px solid #E8E8E8;
+	border-radius: 25px;
+	padding: 0em .75em 0em 0em;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+	
+
+}
+
+
+
+.filters button {  /* Styles the text portion of the filter buttons */
+	font-weight: 500;
+	font-size: 1.2em;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+
+
+.option:active { /* Keeps text black on click */
+	color: black;
+}
+
+.filtertext { /* Styles text that says Filter left of the buttons */
+
+	font-weight: bold;
+	font-size: 1.2em;
+	width: 300px;
+
+}
+
+
+
+
+/* "more than 500 accomodations...." */
+.info {
+	margin-left: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: baseline;
+	width: 300px;
+
+
+}
+
+
+
+
+
+
+
+
+#icon {
+	width: 5.3px;
+	height: 5.3px;
+	border-radius: 25px;
+	padding: .7em;
+	font-size: .7em;
+	color: #0065FC;
+	border: 1px solid #F2F2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+
+
+
+
+
+.info p {
+	padding: 1em;
+
+	
+	
+}
+
+
+
+/* ---------------------- Section 1, 2 and 3 Div ------------------------- */
+
+
+
+
+
+
+
+/*  SECTION 1  -------- ACCOMMODATIONS ---------  CONTAINER w/ 6 DIVS  */
+
+.section1 {
+	width: 300px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	
+}
+
+
+
+/*  ARTICLES INSIDE OF SECTION 1  */
+
+
+.section1 article {
+	width: 300px;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border: 2px solid white;
+	overflow: hidden;
+	line-height: 1px;
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px 2px #f2f2f2;
+	flex-basis: 1;
+	background-color: white;
+	margin: 9px 9px 0px 9px;
+
+}
+
+.section1 h2 {
+	width: 100%;
+	margin: 20px;
+}
+
+
+/* Section 1 Images */
+.section1 img{
+	height: 100%;
+	width: 120%;
+	object-fit: cover;
+	
+
+}
+
+.rating {
+	display: inline;
+	margin-top: 1px;
+	color: #0065FC;
+	margin-bottom: 5px;
+}
+
+.rating i:nth-child(1) {
+	margin-left: 5px;
+
+
+}
+
+.section1 h3 {
+	margin-left: 5px;
+}
+
+.section1 p {
+	margin-left: 5px;
+}
+
+.section1 > h3:last-of-type {
+	width: 100%;
+	margin-left: 20px;
+
+}	
+
+
+
+/*  -------------------------------  SECTION 2------------------------------------*/
+
+
+/* Section 2 Images */
+.section2 img {
+	height: 120px;
+	border-top-left-radius: 15px;
+
+}
+
+
+
+/*  SECTION 2 CONTAINER w/ 3 DIVS  */
+.section2 {
+	height: 100%;
+	width: 300px;
+	background-color: #F2F2F2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	
+	
+
+}
+
+/*  SECTION 2 "MOST POPULAR" text with chart icon  */
+
+#section2header {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+
+
+
+
+/*  DIVS INSIDE OF SECTION 2 CONTAINER  */
+
+.section2mostpop {
+	height: 100px;
+	width: 275px;
+	margin: 9px 9px 0px 9px;
+	display: flex;
+	justify-content: flex-end;
+	overflow: hidden;
+	line-height: 0.8em;
+	background-color: white;
+	border-radius: 20px;
+	border: 3px solid white;
+	
+}
+
+.section2 div:nth-of-type(4){
+	margin-bottom: 10px;
+}
+
+.section2 img {
+	width: 125px;
+	object-fit: cover;
+}
+
+#section2header i {
+	font-size: 1.5em;
+}
+
+
+.section2text {
+	width: 200px;
+	white-space: nowrap;
+	margin-right: 15px;
+
+
+
+}
+
+
+.section2 p {
+	font-size-adjust: smaller;
+	margin-left: .5em;
+}
+
+.section2 h3 {
+	font-size-adjust: smaller;
+	text-indent: right;
+	margin-left: .5em;
+}
+
+.section2text i {
+	font-size: .8em;
+	color: #0065FC;
+	margin-right: -2px;
+
+}
+
+#firststardiv1 {
+
+	margin-left: .5em;
+	
+}
+
+#firststardiv2 {
+
+	margin-left: .5em;
+	
+}
+
+#firststardiv3 {
+
+	margin-left: .5em;
+	
+}
+
+
+
+
+/*----------------------------------------------SECTION 3----------------------------------------------------*/
+
+.section3 {
+	
+width: 300px;
+	
+	display: flex;
+  flex-flow: column;
+	margin: 9px 0px 9px 0px;
+  justify-content: center;
+ 
+
+
+
+
+	
+
+}
+
+
+
+.section3 p {
+	margin-left: 1em;
+}
+
+
+.section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
+	overflow: hidden;
+	border-radius: 15px;
+	border-color: #f2f2f2;
+	box-shadow: 2px 2px 2px 2px #f2f2f2;
+	margin: 0px 0px 8px 0px;
+
+	
+	
+
+
+}
+
+
+
+
+.section3 div {  /*-------------------Divs -------------------*/ 
+  	height: 150px;
+  	width: 300px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: left;
+ 	justify-content: flex-end;
+ 	overflow: hidden;
+ 	
+
+
+}
+
+.section3 img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+  
+}
+
+
+
+
+
+
+
+/*-------------------------FOOTER--------------------------*/
+footer {
+
+	float: left;
+	display: flex;
+	flex-direction: row;
+	
+	width: 300px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2F2F2;
+	margin-top: 20px;
+
+
+}
+
+
+
+.footcolumn {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+
+
+.footcolumn a {
+	color: #000000;
+	padding-bottom: .75em;
+}
+
+.footcolumn h3 {
+	font-weight: 900;
+}
+
+
+
