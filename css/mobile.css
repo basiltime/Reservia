@@ -17,39 +17,36 @@ body {
 
 /* ------------------ NAVIGATION BAR ----------------------*/
 
-nav {
-
-	width: 300px;
-
-}
-
-
 ul {
 	display: flex;
+	height: 100px;
+	list-style: none;
+	align-items: flex-end;
+	padding-left: 0;
+
+}
+
+#mobilenav {
+	width: 300px;
+	display: flex;
 	flex-direction: row;
-	width: 300px;
+	justify-content: space-between;
+	font-size: 1.5em;
 
 }
 
-nav > ul > li:nth-of-type(1) {
-	width: 150px;
-	order: 2;
-	flex-basis: 1;
+.mobileli2 {
+	position: absolute;
+	top: 5px;
+	left: 285px;
+	border: 1px solid black;
 }
 
-nav > ul > li:nth-of-type(2) {
-	width: 150px;
-	order: 3;
-	flex-basis: 1;
 
 
-}
 
-nav > ul > li:nth-of-type(3) {
-	width: 300px;
-	order: 1;
-	flex-basis: 2;
-}
+
+
 
 
 a {
@@ -84,8 +81,9 @@ a:active {
 #logo { /*Reservia Logo*/
 	width: 80px;
 	height: auto;
-	margin-left: 3%;
-	padding-bottom: 1em;
+	position: absolute;
+	top: 5px;
+	left: 5px;
 }	
 	
 
