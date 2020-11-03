@@ -1,7 +1,7 @@
 body {
     font-family: 'Raleway';
     
-    
+   margin: 0px;
 	}
 
 body p {
@@ -73,25 +73,22 @@ a:active {
 #logo { /*Reservia Logo*/
 	width: 100px;
 	height: auto;
-	margin-left: 3%;
 	padding-bottom: 1em;
+	margin-left: 15px;
 }	
 	
 
 .underlogo {
-	line-height: 80%;
-	margin-left: 3%;
+	
+	margin-left: 15px;
 
 
 }
 
 
 .underlogo h3 {    /*---Styles header----*/
-	letter-spacing: -.5px;
-	word-spacing: .5px;
-	font-weight: 900;
-	font-size: 1.46em;
-	font-weight: bold;
+	
+
 }
 
 
@@ -186,12 +183,13 @@ input::placeholder { /*Styles placeholder text */
 
 
 
+
 .filters { /* Container for filters including filter button*/
 	display: flex;
 	align-items: center;
-	padding: 15px 15px 15px;
-	margin-left: 3%;
-
+	padding: 15px 15px 15px 15px;
+	margin-left: 15px;
+	width: 100%;
 	
 
 
@@ -211,6 +209,7 @@ input::placeholder { /*Styles placeholder text */
 	border: 2px solid #DEEBFF;
 	position: relative;
 	left: -2px;
+	bottom: 1px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -222,15 +221,15 @@ input::placeholder { /*Styles placeholder text */
 	}
 
 .option {  /* Filter button containers (includes the icon and text)  */
+	
 	margin: 1em;
-	border: 1.5px solid #E8E8E8;
-	border-radius: 25px;
+	
+	border-radius: 40px;
 	padding: 0em 1em 0em 0em;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	
 	
 
@@ -250,6 +249,48 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
+.option {  /* Filter button containers (includes the icon and text)  */
+
+
+	height: 50px;
+	margin: 1em;
+	border: 2px solid #F2F2F2;
+	border-radius: 35px;
+	padding: 0em 1em 0em 0em;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	 box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	white-space: nowrap;
+
+	
+
+}
+
+
+
+.filters button {  /* Styles the text portion of the filter buttons */
+	
+	
+	font-weight: 500;
+	font-size: 1.2em;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	
+
+
+
+}
+
+
 
 .option:active { /* Keeps text black on click */
 	color: black;
@@ -266,7 +307,7 @@ input::placeholder { /*Styles placeholder text */
 
 /* "more than 500 accomodations...." */
 .info {
-	margin-left: 3%;
+	margin-left: 15px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -363,7 +404,6 @@ input::placeholder { /*Styles placeholder text */
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -373,7 +413,6 @@ input::placeholder { /*Styles placeholder text */
 	box-shadow: 2px 2px 2px 2px #f2f2f2;
 	background-color: white;
 	border: 5px solid white;
-	
 	margin: 16px;
 
 }
@@ -567,16 +606,20 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
-#section3header {
+#section3headerdesktop {
+	margin: 50px 0px 40px 20px;
 	width: 1340px;
 	position: relative;
 	top: 1px;
 	margin-left: 20px;
+	font-size: x-large;
 
 }
 
 
-
+#section3headertablet {
+	display: none;
+}
 
 .section3 h2 {
 	margin: 20px 0px 20px 20px;
@@ -600,8 +643,8 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
-  	height: 455px;
-  	width: 315px;
+  	height: 445px;
+  	width: 302px;
   	display: flex;
   	flex-direction: column;
   	align-items: left;
@@ -612,7 +655,7 @@ input::placeholder { /*Styles placeholder text */
 
 #image1 {
   height: 100%;
-  width: 315px;
+  width: 302px;
   object-fit: cover;
   
 }
@@ -621,8 +664,8 @@ input::placeholder { /*Styles placeholder text */
 
 .section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
 
-  	height: 54%;
-  	width: 315px;
+  	height: 237px;
+  	width: 302px;
 
  	display: flex;
  	flex-direction: column;
@@ -650,7 +693,7 @@ input::placeholder { /*Styles placeholder text */
 .section3 > div:nth-of-type(3) { /*------------------- THIRD DIV  ---------------------------------------------------------------------------------------------------------------------------------------*/ 
 
 
-  height: 36%;
+  height: 164px;
   width: 315px;
 
   display: flex;
@@ -673,9 +716,8 @@ input::placeholder { /*Styles placeholder text */
 }
 
 .section3 > div:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
-	width: 315px;
-
-  	height: 455px;
+	height: 445px;
+  	width: 302px;
   	display: flex;
  	flex-direction: column;
  	align-items: left;
@@ -684,7 +726,7 @@ input::placeholder { /*Styles placeholder text */
 
 #image4 {
   height: 100%;
-  width: 315px;
+  width: 302px;
 
   object-fit: cover;
   
@@ -697,8 +739,8 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section3 > div:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
-  height: 43%;
-  width: 315px;
+  height: 195px;
+  width: 302px;
 
   display: flex;
  	flex-direction: column;
@@ -721,8 +763,8 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section3 > div:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
-  height: 47%;
-  width: 315px;
+  height: 207px;
+  width: 302px;
 
   display: flex;
  	flex-direction: column;

@@ -1,7 +1,10 @@
 body {
     font-family: 'Raleway';
     font-size: 8pt;
-    
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+	width: 375px;
 	}
 
 
@@ -27,7 +30,7 @@ ul {
 }
 
 #mobilenav {
-	width: 300px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -35,12 +38,6 @@ ul {
 
 }
 
-.mobileli2 {
-	position: absolute;
-	top: 5px;
-	left: 285px;
-	border: 1px solid black;
-}
 
 
 
@@ -78,18 +75,21 @@ a:active {
 
 /*----------------- LOGO -----------------------*/
 
+.logowrapper {
+	width: 375px;
+	border: 1px solid black;
+}
+
 #logo { /*Reservia Logo*/
-	width: 80px;
-	height: auto;
-	position: absolute;
-	top: 5px;
-	left: 5px;
+	width: 94px;
+	height: 29px;
+
 }	
 	
 
 .underlogo {
 	line-height: 80%;
-	margin-left: 3%;
+	
 
 
 }
@@ -108,7 +108,7 @@ a:active {
 
 #search {
 	display: flex;
-
+	
 
 
 
@@ -197,10 +197,13 @@ input::placeholder { /*Styles placeholder text */
 
 .filters { /* Container for filters including filter button*/
 	margin: 20px 0px 20px 0px;
-	width: 300px;
+	width: 375px;
+	height: 190px;
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	
 	flex-wrap: wrap;
+	border: 1px solid black;
 	
 	
 
@@ -232,7 +235,7 @@ input::placeholder { /*Styles placeholder text */
 	}
 
 .option {  /* Filter button containers (includes the icon and text)  */
-	margin: 1em 1em 1em 0em;
+	margin: 7px 7px 7px 7px;
 	border: 1.5px solid #E8E8E8;
 	border-radius: 25px;
 	padding: 0em .75em 0em 0em;
@@ -240,6 +243,7 @@ input::placeholder { /*Styles placeholder text */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: fit-content;
 	
 	
 	
@@ -255,7 +259,7 @@ input::placeholder { /*Styles placeholder text */
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	
 
 
 }
@@ -269,7 +273,7 @@ input::placeholder { /*Styles placeholder text */
 
 	font-weight: bold;
 	font-size: 1.2em;
-	width: 300px;
+	width: 100%
 
 }
 
@@ -281,9 +285,9 @@ input::placeholder { /*Styles placeholder text */
 	margin-left: 3%;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: baseline;
-	width: 300px;
+	width: 375x;
 
 
 }
@@ -326,7 +330,10 @@ input::placeholder { /*Styles placeholder text */
 
 /* ---------------------- Section 1, 2 and 3 Div ------------------------- */
 
-
+section12and3 {
+	width: 375;
+	align-self: center;
+}
 
 
 
@@ -335,7 +342,7 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 1  -------- ACCOMMODATIONS ---------  CONTAINER w/ 6 DIVS  */
 
 .section1 {
-	width: 300px;
+	width: 375px;
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -351,7 +358,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section1 article {
-	width: 300px;
+	width: 334px;
 	height: 150px;
 	display: flex;
 	flex-direction: column;
@@ -426,7 +433,7 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
 .section2 {
 	height: 100%;
-	width: 300px;
+	width: 375px;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
@@ -440,7 +447,7 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 2 "MOST POPULAR" text with chart icon  */
 
 #section2header {
-	width: 300px;
+	width: 375px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -456,7 +463,7 @@ input::placeholder { /*Styles placeholder text */
 
 .section2mostpop {
 	height: 100px;
-	width: 275px;
+	width: 334px;
 	margin: 9px 9px 0px 9px;
 	display: flex;
 	justify-content: flex-end;
@@ -473,7 +480,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 .section2 img {
-	width: 125px;
+	width: 132px;
 	object-fit: cover;
 }
 
@@ -483,7 +490,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section2text {
-	width: 200px;
+	width: 202px;
 	white-space: nowrap;
 	margin-right: 15px;
 
@@ -535,19 +542,12 @@ input::placeholder { /*Styles placeholder text */
 
 .section3 {
 	
-width: 300px;
+	width: 375px;
 	
 	display: flex;
   flex-flow: column;
-	margin: 9px 0px 9px 0px;
-  justify-content: center;
- 
-
-
-
-
 	
-
+  justify-content: center;
 }
 
 
@@ -574,13 +574,14 @@ width: 300px;
 
 
 .section3 div {  /*-------------------Divs -------------------*/ 
-  	height: 150px;
-  	width: 300px;
+  	height: 190px;
+  	width: 334px;
   	display: flex;
   	flex-direction: column;
   	align-items: left;
  	justify-content: flex-end;
- 	overflow: hidden;
+	 overflow: hidden;
+	margin-bottom: 24px;
  	
 
 
@@ -588,7 +589,7 @@ width: 300px;
 
 .section3 img {
   height: 100%;
-  width: 300px;
+  width: 334px;
   object-fit: cover;
   
 }
@@ -601,29 +602,23 @@ width: 300px;
 
 /*-------------------------FOOTER--------------------------*/
 footer {
-
-	float: left;
 	display: flex;
 	flex-direction: row;
-	
-	width: 300px;
+	width: 375px;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-color: #F2F2F2;
-	margin-top: 20px;
-
+		background-color: #F2F2F2;
 
 }
 
 
 
 .footcolumn {
-	width: 300px;
+	margin: 50px 0px 30px 30px;
+	width: 375px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: flex-start;
 
 
 
