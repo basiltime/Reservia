@@ -4,7 +4,8 @@ body {
     display: flex;
     flex-direction: column;
 	justify-content: center;
-	width: 375px;
+	align-items: center;
+	width: 100%;
 	}
 
 
@@ -134,8 +135,8 @@ a:active {
 /*---------- Input Box ------------*/
 
 #search input { /* Styles input box */
-	border-radius-bottom-right: 8px;
-	border-radius-bottom-left: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 	width: auto;
 	background-color: #ffffff;
 	margin: 0px;
@@ -198,12 +199,10 @@ input::placeholder { /*Styles placeholder text */
 .filters { /* Container for filters including filter button*/
 	margin: 20px 0px 20px 0px;
 	width: 375px;
-	height: 190px;
 	display: flex;
 	flex-direction: row;
-	
 	flex-wrap: wrap;
-	border: 1px solid black;
+	
 	
 	
 
@@ -214,8 +213,8 @@ input::placeholder { /*Styles placeholder text */
 .filters i { /*   JUST THE ICONS    */
 	color: #0065FC;
 	background-color: #DEEBFF;
-	height: 8.5px;
-	width: 8.5px;
+	height: 19px;
+	width: 19px;
 	padding: .75em;
 	font-size: 1em;
 	border-radius: 100%;
@@ -236,7 +235,7 @@ input::placeholder { /*Styles placeholder text */
 
 .option {  /* Filter button containers (includes the icon and text)  */
 	margin: 7px 7px 7px 7px;
-	border: 1.5px solid #E8E8E8;
+	border: 2px solid #E8E8E8;
 	border-radius: 25px;
 	padding: 0em .75em 0em 0em;
 	position: relative;
@@ -244,17 +243,15 @@ input::placeholder { /*Styles placeholder text */
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
+	height: 50px;
 	
-	
-	
-
 }
 
 
 
+
 .filters button {  /* Styles the text portion of the filter buttons */
-	font-weight: 500;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	background-color: white;
 	display: flex;
 	justify-content: center;
@@ -359,18 +356,18 @@ section12and3 {
 
 .section1 article {
 	width: 334px;
-	height: 150px;
+	height: 199px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	border: 2px solid white;
+	border: 4px solid white;
 	overflow: hidden;
 	line-height: 1px;
-	border-radius: 15px;
+	border-radius: 25px;
 	box-shadow: 2px 2px 2px 2px #f2f2f2;
 	flex-basis: 1;
 	background-color: white;
-	margin: 9px 9px 0px 9px;
+	margin: 12px 12px 12px 12px;
 
 }
 
@@ -423,7 +420,7 @@ section12and3 {
 
 /* Section 2 Images */
 .section2 img {
-	height: 120px;
+	height: 144px;
 	border-top-left-radius: 15px;
 
 }
@@ -462,7 +459,7 @@ section12and3 {
 /*  DIVS INSIDE OF SECTION 2 CONTAINER  */
 
 .section2mostpop {
-	height: 100px;
+	height: 144px;
 	width: 334px;
 	margin: 9px 9px 0px 9px;
 	display: flex;
@@ -471,7 +468,7 @@ section12and3 {
 	line-height: 0.8em;
 	background-color: white;
 	border-radius: 20px;
-	border: 3px solid white;
+	border: 6px solid white;
 	
 }
 
@@ -546,10 +543,14 @@ section12and3 {
 	
 	display: flex;
   flex-flow: column;
-	
+	align-items: center;
   justify-content: center;
+  
 }
 
+#section3headertablet {
+	display: none;
+}
 
 
 .section3 p {
@@ -559,11 +560,12 @@ section12and3 {
 
 .section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
 	overflow: hidden;
-	border-radius: 15px;
+	border-radius: 25px;
 	border-color: #f2f2f2;
 	box-shadow: 2px 2px 2px 2px #f2f2f2;
 	margin: 0px 0px 8px 0px;
-
+	
+	
 	
 	
 
