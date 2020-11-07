@@ -197,17 +197,13 @@ input::placeholder { /*Styles placeholder text */
 
 
 .filters { /* Container for filters including filter button*/
-	margin: 20px 0px 20px 0px;
-	width: 375px;
+	
+	width: 337px; height: 192px;
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	
-	
-	
-
-
-}
+	flex-direction: column;
+	justify-content: flex-start;
+}	
 
 
 .filters i { /*   JUST THE ICONS    */
@@ -219,7 +215,7 @@ input::placeholder { /*Styles placeholder text */
 	font-size: 1em;
 	border-radius: 100%;
 	border-style: 10px solid #DEEBFF;
-	margin-right: .5em;
+	margin-right: 12px;
 	border: 2px solid #DEEBFF;
 	position: relative;
 	left: -2px;
@@ -234,11 +230,10 @@ input::placeholder { /*Styles placeholder text */
 	}
 
 .option {  /* Filter button containers (includes the icon and text)  */
-	margin: 7px 7px 7px 7px;
+	margin: 7px 0px 7px 0px;
 	border: 2px solid #E8E8E8;
 	border-radius: 25px;
 	padding: 0em .75em 0em 0em;
-	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -248,7 +243,25 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
+.option:nth-of-type(1) {
+	padding-right: 18px;
+}
 
+.option:nth-of-type(2) {
+	
+}
+
+.option:nth-of-type(3) {
+	padding-right: 31px;
+	order: 4;
+	position: relative;
+	left: -34px;
+}
+
+.option:nth-of-type(4) {
+	padding-right: 56px;
+	order: 3;
+}
 
 .filters button {  /* Styles the text portion of the filter buttons */
 	font-size: 1.5em;
@@ -257,8 +270,6 @@ input::placeholder { /*Styles placeholder text */
 	justify-content: center;
 	align-items: center;
 	
-
-
 }
 
 
@@ -266,15 +277,19 @@ input::placeholder { /*Styles placeholder text */
 	color: black;
 }
 
-.filtertext { /* Styles text that says Filter left of the buttons */
+.filtertextmobile { /* Styles text that says Filter left of the buttons */
 
 	font-weight: bold;
 	font-size: 1.2em;
-	width: 100%
+	width: 337px; height: 22px;
+	
 
+	
 }
 
-
+.filtertext {
+	display: none;
+}
 
 
 /* "more than 500 accomodations...." */
