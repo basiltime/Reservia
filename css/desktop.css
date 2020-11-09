@@ -23,7 +23,9 @@ nav {
 	margin-top: 0%;
 }
 
-
+#mobilenav {
+	display: none;
+}
 
 ul {
 	text-align: right;
@@ -96,7 +98,7 @@ a:active {
 
 #search {
 	display: flex;
-
+	margin-left: 10px;
 
 
 
@@ -296,11 +298,27 @@ input::placeholder { /*Styles placeholder text */
 	color: black;
 }
 
+
+
+
+
+
+
 .filtertext { /* Styles text that says Filter left of the buttons */
 	padding-right: 10px;
 	font-weight: bold;
 	font-size: 1.2em;
 }
+
+
+
+
+
+
+.filtertextmobile { /* Hides mobile version*/
+	display: none;
+}
+
 
 
 
@@ -313,14 +331,7 @@ input::placeholder { /*Styles placeholder text */
 	justify-content: flex-start;
 	align-items: baseline;
 	width: 300px;
-
-
 }
-
-
-
-
-
 
 
 
@@ -336,12 +347,7 @@ input::placeholder { /*Styles placeholder text */
 	justify-content: center;
 	align-items: center;
 
-
 }
-
-
-
-
 
 
 .info p {
@@ -606,15 +612,7 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
-#section3headerdesktop {
-	margin: 50px 0px 40px 20px;
-	width: 1340px;
-	position: relative;
-	top: 1px;
-	margin-left: 20px;
-	font-size: x-large;
 
-}
 
 
 #section3headertablet {
