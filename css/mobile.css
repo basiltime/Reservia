@@ -10,6 +10,19 @@ body {
 	}
 
 
+/* ---------------- Hover Effects (Remove section2mostpop and .section3 > div when I change divs into articles) */
+
+article:hover {
+	transform: scale(1.007);
+}
+
+.section2mostpop:hover {
+	transform: scale(1.007);
+}
+
+.section3 > div:hover {
+	transform: scale(1.007);
+}
 
 /* -- Blue #0065FC 
 
@@ -442,6 +455,8 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
+
+
 .section1 h1 {
 	width: 100%;
 	margin: 41px 0px 23px 20px;
@@ -487,7 +502,35 @@ input::placeholder { /*Styles placeholder text */
 }	
 
 
+/* Section 1 gray stars */
+ 
+#Auberge > i:nth-of-type(5) {
+	color: #dedede;
 
+}
+
+
+#Lesmouettes> i:nth-of-type(5) {
+	color: #dedede;
+	
+
+}
+
+#delamar> i:nth-of-type(n+4) {
+	color: #dedede;
+	
+
+}
+
+#aubergelepanier > i:nth-of-type(5) {
+	color: #dedede;
+}
+
+/* Star Sizing */
+.staricon {
+	margin-right: -1.5px;
+	font-size: 12px;
+}
 /*  -------------------------------  SECTION 2------------------------------------*/
 
 
@@ -570,8 +613,6 @@ input::placeholder { /*Styles placeholder text */
 	white-space: nowrap;
 	margin-right: 15px;
 
-
-
 }
 
 
@@ -587,9 +628,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 .section2text i {
-	font-size: .8em;
 	color: #0065FC;
-	margin-right: -2px;
 
 }
 
@@ -611,7 +650,22 @@ input::placeholder { /*Styles placeholder text */
 	
 }
 
+/* Section 2 gray stars */
+ 
+#morningsun > i:nth-of-type(5) {
+	color: #dedede;
 
+}
+
+#bedandbreakfast > i:nth-of-type(5) {
+	color: #dedede;
+
+}
+
+#toutbleu > i:nth-of-type(5) {
+	color: #dedede;
+
+}
 
 
 /*----------------------------------------------SECTION 3----------------------------------------------------*/
