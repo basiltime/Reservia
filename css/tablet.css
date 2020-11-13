@@ -16,15 +16,6 @@ article:hover {
 	transform: scale(1.007);
 }
 
-.section2mostpop:hover {
-	transform: scale(1.007);
-}
-
-.section3 > div:hover {
-	transform: scale(1.007);
-}
-
-
 /* -- Blue #0065FC 
 
    -- Lighter Blue #DEEBFF
@@ -659,7 +650,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-.section3 > div {  /* ---------------  SECTION 3 DIVS ---------------  */ 
+.section3 > article {  /* ---------------  SECTION 3 DIVS ---------------  */ 
 	width: 220px;
 	height: 176px;
 	box-sizing: border-box;

@@ -16,13 +16,6 @@ article:hover {
 	transform: scale(1.007);
 }
 
-.section2mostpop:hover {
-	transform: scale(1.007);
-}
-
-.section3 > div:hover {
-	transform: scale(1.007);
-}
 
 /* -- Blue #0065FC 
 
@@ -696,7 +689,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-.section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
+.section3 article {       /*----------------HIDES OVERFLOW---------------*/ 
 	overflow: hidden;
 	border-radius: 25px;
 	border-color: #f2f2f2;
@@ -708,7 +701,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-.section3 div {  /*-------------------Divs -------------------*/ 
+.section3 article {  /*-------------------Divs -------------------*/ 
   	height: 190px;
   	width: 334px;
   	display: flex;
@@ -728,7 +721,7 @@ input::placeholder { /*Styles placeholder text */
   
 }
 
-.section3 > div > h4 {
+.section3 > article > h4 {
 	margin-left: 15px;
 	font-size: 1.4em;
 

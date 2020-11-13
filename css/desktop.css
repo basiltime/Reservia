@@ -10,13 +10,7 @@ article:hover {
 	transform: scale(1.007);
 }
 
-.section2mostpop:hover {
-	transform: scale(1.007);
-}
 
-.section3 > div:hover {
-	transform: scale(1.007);
-}
 
 /* -- Blue #0065FC 
 
@@ -680,7 +674,7 @@ input::placeholder { /*Styles placeholder text */
 	}
 
 
-.section3 div {       /*----------------HIDES OVERFLOW---------------*/ 
+.section3 article {       /*----------------HIDES OVERFLOW---------------*/ 
 	overflow: hidden;
 	border-radius: 20px;
 	border-color: #f2f2f2;
@@ -695,7 +689,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-.section3 > div:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
+.section3 > article:nth-of-type(1) {  /*------------------- FIRST DIV (FULL HEIGHT) -------------------*/ 
   	height: 445px;
   	width: 302px;
   	display: flex;
@@ -715,7 +709,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-.section3 > div:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
+.section3 > article:nth-of-type(2) { /*------------------- SECOND DIV  -------------------*/ 
 
   	height: 237px;
   	width: 302px;
@@ -743,7 +737,7 @@ input::placeholder { /*Styles placeholder text */
 	
 
 
-.section3 > div:nth-of-type(3) { /*------------------- THIRD DIV  ---------------------------------------------------------------------------------------------------------------------------------------*/ 
+.section3 > article:nth-of-type(3) { /*------------------- THIRD DIV  ---------------------------------------------------------------------------------------------------------------------------------------*/ 
 
 
   height: 164px;
@@ -768,7 +762,7 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
-.section3 > div:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
+.section3 > article:nth-of-type(4) { /*------------------- FOURTH DIV (FULL HEIGHT) -------------------*/ 
 	height: 445px;
   	width: 302px;
   	display: flex;
@@ -791,7 +785,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-.section3 > div:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
+.section3 > article:nth-of-type(5) { /*------------------- FIFTH DIV  -------------------*/ 
   height: 195px;
   width: 302px;
 
@@ -815,7 +809,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-.section3 > div:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
+.section3 > article:nth-of-type(6) { /*------------------- SIXTH DIV  -------------------*/ 
   height: 207px;
   width: 302px;
 
