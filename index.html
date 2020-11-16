@@ -8,7 +8,8 @@
 	<link rel="stylesheet" media="screen and (max-width: 700px)" href="css/mobile.css"><!-- <link rel="stylesheet" media="screen and (max-width: 700px)" href="mobile.css"> -->
 	<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="css/tablet.css"> <!-- <link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="tablet.css"> -->
 	<link rel="stylesheet" media="screen and (min-width: 901px)" href="css/desktop.css"> <!-- <link rel="stylesheet" media="screen and (min-width: 901px)" href="css/desktop.css"> -->
- 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+ 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
  	<script src="https://kit.fontawesome.com/693b0c1374.js" crossorigin="anonymous"></script>
   
 
@@ -58,7 +59,7 @@
 <div id="search">
 	<i class="fas fa-map-marker-alt"></i> 
 	<input type="text" placeholder="Marseille, France">
-	<button>Search</button></div>
+	<i class="fas fa-search"></i>
 </div>
 
 
@@ -66,7 +67,7 @@
 <div class="filtertextmobile">Filters</div>
 <div class="filters">
 	<div class="filtertext">Filters</div>
-	<button class="option"><i class="fas fa-money-bill-wave"></i>Low Cost</button>
+	<button class="option"><i class="fas fa-money-bill-wave"></i><p>Low cost</p></button>
 	<button class="option"><i class="fas fa-child"></i>Family-friendly</button>
 	<button class="option"><i class="fas fa-heart"></i>Romantic</button>
 	<button class="option"><i class="fas fa-dog"></i>Pets allowed</button>
@@ -75,7 +76,7 @@
 
 <!---------Info icon- "More than 500 accommodations...."-->
 <div class="info">
-<i class="fas fa-info" id="icon"></i>
+<div id ="infoicon"><i class="fas fa-info fa-circle" id="icon"></i></div>
 <p>More than 500 accommodations are available in this city</p>
 </div>
 
@@ -203,7 +204,7 @@
 	<article class="section2mostpop">
 		<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" title="Morning Sun Hotel" alt="Morning Sun Hotel">
 		<div class ="section2text" id="morningsun">
-			<h3>Morning Sun Hotel</h3>
+			<h4>Morning Sun Hotel</h4>
 			<p>Night starting at 128&euro;</p>
 			<i class="fas fa-star staricon" id="firststardiv1"></i>
 			<i class="fas fa-star staricon"></i>
@@ -214,9 +215,9 @@
 	</article>
 
 	<article class="section2mostpop">
-		<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" title="Au c&oelig;ur de l'eau Bed and Breakfast" alt="Au c&oelig;ur de l'eau Bed and Breakfast">
+		<img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" title="Au c&oelig;ur de l'eau Bed and Breakfast" alt="Au c&oelig;ur de l'Eau Bed and Breakfast">
 		<div class ="section2text" id="bedandbreakfast">
-			<h3>Au c&oelig;ur de l'eau Bed and Breakfast</h3>
+			<h4>Au c&oelig;ur de l'Eau Bed and Breakfast</h4>
 			<p>Night starting at 25&euro;</p>
 			<i class="fas fa-star staricon" id="firststardiv2"></i>
 			<i class="fas fa-star staricon"></i>
@@ -229,7 +230,7 @@
 	<article class="section2mostpop">
 		<img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" title="Tout bleu et Blanc Hotel" alt="Tout bleu et Blanc Hotel">
 		<div class ="section2text" id="toutbleu">
-			<h3>Tout bleu et Blanc Hotel</h3>
+			<h4>Tout bleu et Blanc Hotel</h4>
 			<p>Night starting at 68&euro;</p>
 			<i class="fas fa-star staricon" id="firststardiv3"></i>
 			<i class="fas fa-star staricon"></i>
@@ -278,18 +279,18 @@
 <!------------------FOOTER---------------------->
 <footer>
 
-<div class="footcolumn">
+<div class="footcolumn" id="footercolumn1">
 	<h3>About</h3>
 	<a href="x">Site Map</a>
 	<a href="x">General Terms and Conditions</a>
 	<a href="x">Data and Privacy</a>
 </div>
-<div class="footcolumn">
+<div class="footcolumn" id="footercolumn2">
 	<h3>Our Accommodations</h3>
 	<a href="x">Quality Assessment</a>
 	<a href="x">You have a hotel?</a>
 </div>
-<div class="footcolumn">
+<div class="footcolumn" id="footercolumn3">
 	<h3>Assistance</h3>
 	<a href="x">Help Desk</a>
 	<a href="x">Contact Us</a>

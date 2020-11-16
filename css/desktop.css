@@ -841,13 +841,13 @@ footer {
 	float: left;
 	display: flex;
 	flex-direction: column;
-	height: 100px;
+	height: 218px;
 	width: 100%;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	padding: 2em 2em 2em 2em;
-	margin-top: 75px;
+	
 
 
 }
@@ -858,6 +858,7 @@ footer {
 	
 	display: flex;
 	flex-direction: column;
+
 
 
 
