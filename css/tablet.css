@@ -118,8 +118,9 @@ a:active {
 
 #search {
 	display: flex;
-	align-self: flex-start;
-	margin: 20px 0px 20px 30px;
+	margin: 20px 0px 20px 20px;
+	width: 725px;
+;
 
 
 
