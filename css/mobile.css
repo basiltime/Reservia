@@ -23,7 +23,9 @@ article:hover {
 
    -- Lighter Blue #DEEBFF
 
-   -- Gray #F2F2F2
+   -- Gray #
+
+   -- Darker Gray (for Filter Button border) #D9D9D9
 
 ----------------------*/
 
@@ -203,7 +205,6 @@ a:active {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	
 	width: 245px;
 	height: 51px;
 	background-color: #ffffff;

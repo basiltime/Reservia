@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway';
+   font-family: 'Raleway';
     
    margin: 0px;
 	}
@@ -16,7 +16,9 @@ article:hover {
 
    -- Lighter Blue #DEEBFF
 
-   -- Gray #F2F2F2
+   -- Gray #
+
+   -- Darker Gray (for Filter Button border) #D9D9D9
 
 ----------------------*/
 
@@ -27,7 +29,7 @@ nav {
 	margin-top: 0%;
 }
 
-#mobilenav {
+#mobilenav {  			/* Hides mobile nav */
 	display: none;
 }
 
@@ -43,6 +45,7 @@ li {
 	display: inline-block;
 	color: #0065FC;
 	padding: 3% 3% 0% 3%;
+	font-size: 16px;
 }
 
 
@@ -76,24 +79,32 @@ a:active {
 
 /*----------------- LOGO -----------------------*/
 
+.logowrapper {
+	margin-left: 15px;
+	
+	display: flex;
+	flex-direction: column;
+}
+
 #logo { /*Reservia Logo*/
-	width: 100px;
-	height: auto;
-	padding-bottom: 1em;
-	margin-left: 15px;
-}	
+	width: 90px;
 	
-
-.underlogo {
-	
-	margin-left: 15px;
-
-
+	margin-bottom: 30px;
 }
 
 
-.underlogo h3 {    /*---Styles header----*/
+.underlogo h3 {    /* 'Find a place for your dream vacation' */
+	font-size: 20px;
+	margin: 0px 0px 8px 0px;
+	letter-spacing: .1px;
+	word-spacing: .3px;
+
+}
+
+.underlogo p {    /* 'Downtown or in nature' */
+	font-size: 15.5px;
 	
+	margin: 0px 0px 20px 0px;
 
 }
 
@@ -103,7 +114,9 @@ a:active {
 #search {
 	display: flex;
 	margin-left: 10px;
-
+	width: 380px;
+	height: 50px;
+	justify-content: space-between;
 
 
 }
@@ -116,7 +129,7 @@ a:active {
 	width: 37px;
 	margin: 0px;
 	padding: 0px;
-	font-size: 1.2em;
+	font-size: 18px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -125,20 +138,20 @@ a:active {
 
 }
 
+
+
 /*---------- Input Box ------------*/
 
 #search input { /* Styles input box */
-	border-radius-bottom-right: 8px;
-	border-radius-bottom-left: 8px;
-	width: auto;
+	
 	background-color: #ffffff;
 	margin: 0px;
 	padding: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-indent: 1em;
-	font-size: 1.2em;
+	text-indent: 17px;
+	font-size: 18px;
 	border-style: none;
 	outline: none;
 	border-top: .2px solid #F2F2f2;
@@ -150,15 +163,14 @@ a:active {
 input:focus { /*Gets rid of default outline and borders on click */
 	border-style: none;
 	outline: none;
-	font-size: 1.2em;
+	
 	
 }
 
 
 input::placeholder { /*Styles placeholder text */
-	text-indent: 1em;
+	text-indent: 17px;
 	font-weight: 500;
-	font-size: 1em;
 	color: black;
 
 }
@@ -166,205 +178,158 @@ input::placeholder { /*Styles placeholder text */
 
 /*---------- Search Button------------*/
 
-#search button {
-	background-color: #0065FC;
-	height: 37px;
-	width: 62px;
-	margin: 0px;
-	padding: 0px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	font-size: 1.2em;
-	color: white;
-	border-style: none;
 
 
-
+#search i:first-of-type {
+	height: 50px;
+	width: 52px;
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
 }
 
+#search i:last-of-type {
+	display: none;
+}
+
+#search button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0065FC;
+	height: 50px;
+	width: 94px;
+	margin: 0px;
+	padding: 0px;
+	border-top-right-radius: 17px;
+	border-bottom-right-radius: 17px;
+	color: white;
+	border-style: none;
+}
+
+#search > button > p {
+	font-size: 18px;
+}
 
 
 /*-------------FILTERS---------------*/
 
-
-
-
-
-.filters { /* Container for filters including filter button*/
+.filters { 							/* Container for filters including filter button*/
 	display: flex;
 	align-items: center;
 	padding: 15px 15px 15px 15px;
 	margin-left: 15px;
 	width: 100%;
-	
-
+	height: 50px;
 
 }
 
 
-.filters i { /*   JUST THE ICONS    */
-	color: #0065FC;
-	background-color: #DEEBFF;
-	height: 11.5px;
-	width: 11.5px;
-	padding: .75em;
-	font-size: 1.2em;
-	border-radius: 100%;
-	border-style: 10px solid #DEEBFF;
-	margin-right: .5em;
-	border: 2px solid #DEEBFF;
-	position: relative;
-	left: -2px;
-	bottom: 1px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	.filtertext { 					/* Styles text that says Filter left of the buttons */
+		padding-right: 10px;
+		font-weight: bold;
+		font-size: 18px;
+	}
 
-
-
-
+	.filters button {  				/* Styles the text portion of the filter buttons */
+		
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.filters i { 					/*   Icons inside of filter buttons    */
+		color: #0065FC;
+		background-color: #DEEBFF;
+		height: 45px;
+		width: 45px;
+		border-radius: 100%;
+		border-style: 10px solid #DEEBFF;
+		margin-right: 10px;
+		border: 2px solid #DEEBFF;
+		position: relative;
+		left: -2px;
+		bottom: 1px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
 
 	}
 
-.option {  /* Filter button containers (includes the icon and text)  */
-	
-	margin: 1em;
-	
-	border-radius: 40px;
-	padding: 0em 1em 0em 0em;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	
-
-}
 
 
+	.option:active { 				/* Keeps text black on click */
+		color: black;
+	}
 
-.filters button {  /* Styles the text portion of the filter buttons */
-	font-weight: 500;
-	font-size: 1.2em;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.option {  						/* Filter button containers (includes the icon and text)  */
 
+		height: 50px;
+		margin: 1em;
+		border: 2px solid #D9D9D9;
+		border-radius: 35px;
+		padding: 0px 18px 0px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		 box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+		white-space: nowrap;
 
+	}
 
-}
-
-.option {  /* Filter button containers (includes the icon and text)  */
-
-
-	height: 50px;
-	margin: 1em;
-	border: 2px solid #F2F2F2;
-	border-radius: 35px;
-	padding: 0em 1em 0em 0em;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	 box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-	white-space: nowrap;
-
-	
-
-}
+	.option > p {
+		font-size: 18px;
+		font-weight: 625;
+	}
 
 
-
-.filters button {  /* Styles the text portion of the filter buttons */
-	
-	
-	font-weight: 500;
-	font-size: 1.2em;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-
-	
-
-
-
-}
-
-
-
-.option:active { /* Keeps text black on click */
-	color: black;
-}
+	.filtertextmobile { 			/* Hides mobile version */
+		display: none;
+	}
 
 
 
 
+/* ------------- i icon and 'more than 500 accommodations... ----------- */
+
+						
+	.info {							/* "more than 500 accomodations...." */
+		margin-left: 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: baseline;
+		width: 427px;
+		
+	}
 
 
 
-.filtertext { /* Styles text that says Filter left of the buttons */
-	padding-right: 10px;
-	font-weight: bold;
-	font-size: 1.2em;
-}
+	#icon {
+		border-radius: 25px;
+		color: #0065FC;
+		border: 1.5px solid #F2F2f2;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 5px;
+		width: 5px;
+		padding: 9px;
+	}
 
 
+	.info p {
+	font-size: 16px;
+	padding-left: 12px;	
+	}
 
+	#section12and3 {
+		width: 1400px;
 
-
-
-.filtertextmobile { /* Hides mobile version*/
-	display: none;
-}
-
-
-
-
-
-/* "more than 500 accomodations...." */
-.info {
-	margin-left: 15px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
-	width: 300px;
-}
-
-
-
-#icon {
-	width: 5.3px;
-	height: 5.3px;
-	border-radius: 25px;
-	padding: .7em;
-	font-size: .7em;
-	color: #0065FC;
-	border: 1px solid #F2F2f2;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-
-.info p {
-	padding: 1em;
-
-	
-	
-}
-
-#section12and3 {
-	width: 1400px;
-
-}
+	}
 
 /* ---------------------- Section 1 AND Section 2 div ------------------------- */
 
@@ -425,13 +390,17 @@ input::placeholder { /*Styles placeholder text */
 	border: 5px solid white;
 	margin: 16px;
 
+
 }
 
 
 .section1  > h1 {
 	width: 100%;
-	margin: 35px 0px 20px 40px;
+	margin: 43px 0px 0px 40px;
 	display: flex;
+	font-size: 21px;
+	font-weight: bold;
+	
 }
 
 
@@ -487,25 +456,31 @@ input::placeholder { /*Styles placeholder text */
 
 .section1 h4 {
 	margin-left: 10px;
-}
+	font-size: 16px;
+	height: 100%;
+ } 
+
 
 .section1 p {
-	margin-left: 10px;
+	margin: 0px 0px 12px 10px;
+	font-size: 15px;
 }
 
-.section1 h3 {
-	width: 100%;
-	margin: 10px 0px 30px 40px;
 
-}	
 
 /* Star Sizing */
 .staricon {
 	padding: 0px;
 	margin-right: -4px;
+	margin-bottom: 3px;
 	font-size: 12px;
 }
 
+.section1 h3 {
+	width: 100%;
+	font-size: 19px;
+	margin: 25px 0px 48px 40px;
+}
 /*  -------------------------------  SECTION 2------------------------------------*/
 
 
@@ -552,11 +527,11 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-/*  DIVS INSIDE OF SECTION 2 CONTAINER  */
+/*  DIVS INSIDE OF SECTION 2 CONTAINER  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .section2mostpop {
 	height: 145px;
-	width: 345px;
+	width: 353px;
 	margin: 0px 0px 30px 0px;
 	display: flex;
 	justify-content: flex-end;
@@ -573,36 +548,60 @@ input::placeholder { /*Styles placeholder text */
 
 
 #section2header i {
-	font-size: 1.5em;
+	font-size: 22px;
+
+}
+
+#section2header h1 {
+	font-size: 21px;
+}
+
+
+.section2text {       /* text and star icons */
+	width: 211px;
+	height: 100px;
+	
+	
+}
+
+
+
+
+
+.mostpopulartext {                    /* h4 and p for articles in seciont 2 */
+	
+	height: 74px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0px 0px 0px 17px;
+
 
 }
 
 
-.section2text {
-	width: 200px;
-	white-space: nowrap;
-	margin-right: 15px;
 
 
 
-}
 
 
 .section2 p {
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
 	
-	margin-left: .5em;
 }
 
-.section2 h3 {
+.section2 h4 {
+	font-size: 16px;
+	margin: 10px 0px 0px 0px;
 	
-	text-indent: right;
-	margin-left: .5em;
+
 }
 
 .section2text i {
-
 	color: #0065FC;
-	
+	margin-top: 44px;
+
 
 }
 
@@ -610,19 +609,19 @@ input::placeholder { /*Styles placeholder text */
 
 #firststardiv1 {
 
-	margin-left: .5em;
+	margin-left: 18px;
 	
 }
 
 #firststardiv2 {
 
-	margin-left: .5em;
+	margin-left: 18px;
 	
 }
 
 #firststardiv3 {
 
-	margin-left: .5em;
+	margin-left: 18px;
 	
 }
 
@@ -668,10 +667,18 @@ input::placeholder { /*Styles placeholder text */
 	display: none;
 }
 
-.section3 h2 {
-	margin: 20px 0px 20px 20px;
 
-	}
+#section3headerdesktop {
+	width: 100%;
+	font-size: 21px;
+	margin: 60px 0px 20px 20px;
+}
+
+
+.section3 h4 {
+	margin-left: 20px;
+}
+
 
 
 .section3 article {       /*----------------HIDES OVERFLOW---------------*/ 
