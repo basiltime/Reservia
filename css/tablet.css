@@ -13,7 +13,11 @@ body {
 /* ---------------- Hover Effects (Remove section2mostpop and .section3 > div when I change divs into articles) */
 
 article:hover {
-	transform: scale(1.007);
+	transform: scale(1.008);
+}
+
+article { 
+	box-shadow: 2px 3px 20px -5px #cccccc; 
 }
 
 /* -- Blue #0065FC 
@@ -50,6 +54,8 @@ li {
 	display: inline-block;
 	color: #0065FC;
 	padding: 3% 3% 0% 3%;
+	border-top-style: solid;
+	border-top-color: #ffffff;
 }
 
 
@@ -120,12 +126,12 @@ a:active {
 
 #search {
 	display: flex;
-	margin: 20px 0px 20px 20px;
-	width: 725px;
-;
-
-
-
+	margin-left: 10px;
+	width: 380px;
+	height: 50px;
+	justify-content: space-between;
+	align-self: flex-start;
+	margin-left: 50px;
 
 }
 
@@ -137,7 +143,7 @@ a:active {
 	width: 37px;
 	margin: 0px;
 	padding: 0px;
-	font-size: 1.2em;
+	font-size: 18px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -146,20 +152,20 @@ a:active {
 
 }
 
+
+
 /*---------- Input Box ------------*/
 
 #search input { /* Styles input box */
-	border-radius-bottom-right: 8px;
-	border-radius-bottom-left: 8px;
-	width: auto;
+	
 	background-color: #ffffff;
 	margin: 0px;
 	padding: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-indent: 1em;
-	font-size: 1.2em;
+	text-indent: 17px;
+	font-size: 18px;
 	border-style: none;
 	outline: none;
 	border-top: .2px solid #F2F2f2;
@@ -177,7 +183,7 @@ input:focus { /*Gets rid of default outline and borders on click */
 
 
 input::placeholder { /*Styles placeholder text */
-	text-indent: 1em;
+	text-indent: 17px;
 	font-weight: 500;
 	color: black;
 
@@ -186,169 +192,165 @@ input::placeholder { /*Styles placeholder text */
 
 /*---------- Search Button------------*/
 
-#search button {
-	background-color: #0065FC;
-	height: 37px;
-	width: 62px;
-	margin: 0px;
-	padding: 0px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	font-size: 1.2em;
-	color: white;
-	border-style: none;
 
 
-
+#search i:first-of-type {
+	height: 50px;
+	width: 52px;
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
 }
 
+#search i:last-of-type {
+	display: none;
+}
 
+#search button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #0065FC;
+	height: 50px;
+	width: 94px;
+	margin: 0px;
+	padding: 0px;
+	border-top-right-radius: 17px;
+	border-bottom-right-radius: 17px;
+	color: white;
+	border-style: none;
+}
+
+#search > button > p {
+	font-size: 18px;
+}
 
 /*-------------FILTERS---------------*/
 
-
-
-
-.filters { /* Container for filters including filter button*/
+.filters { 							/* Container for filters including filter button*/
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 700px;
-	
-
-	
-
+	padding: 15px 15px 15px 15px;
+	margin-left: 15px;
+	width: 100%;
+	height: 50px;
 
 }
 
 
-.filters i { /*   JUST THE ICONS    */
-	color: #0065FC;
-	background-color: #DEEBFF;
-	height: 11.5px;
-	width: 11.5px;
-	padding: .65em;
-	font-size: 1.2em;
-	border-radius: 100%;
-	border-style: 10px solid #DEEBFF;
-	margin-right: .5em;
-	border: 2px solid #DEEBFF;
-	position: relative;
-	left: -2px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	.filtertext { 					/* Styles text that says Filter left of the buttons */
+		padding-right: 10px;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	.filters button {  				/* Styles the text portion of the filter buttons */
+		
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.filters i { 					/*   Icons inside of filter buttons    */
+		color: #0065FC;
+		background-color: #DEEBFF;
+		height: 45px;
+		width: 45px;
+		border-radius: 100%;
+		border-style: 10px solid #DEEBFF;
+		margin-right: 10px;
+		border: 2px solid #DEEBFF;
+		position: relative;
+		left: -2px;
+		bottom: 1px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 16px;
+
+	}
 
 
+
+	.option:active { 				/* Keeps text black on click */
+		color: black;
+	}
+
+	.option {  						/* Filter button containers (includes the icon and text)  */
+
+		height: 50px;
+		margin: 1em;
+		border: 2px solid #D9D9D9;
+		border-radius: 35px;
+		padding: 0px 18px 0px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		 box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+		white-space: nowrap;
 
 
 
 	}
 
-.filters > button:nth-of-type(1) {  /* Filter button containers (includes the icon and text)  */
+	.option > p {
+		font-size: 18px;
+		font-weight: 625;
+	}
 
-	border: 2px solid #F2F2F2;
-	border-radius: 35px;
-	padding: 0em 5px 0em 0em;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	white-space: nowrap;
-	
-
-}
-
-.filters > button {
-	border: 2px solid #F2F2F2;
-	border-radius: 35px;
-	padding: 0em 5px 0em 0em;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	white-space: nowrap;
-}
-
-.filters button {  /* Styles the text portion of the filter buttons */
-	font-weight: 500;
-	font-size: 1.2em;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	.option:hover {
+		box-shadow: 2px 2px 15px -5px #cccccc; 
+		transform: scale(1.007);
+		}
 
 
-
-}
-
-
-.option:active { /* Keeps text black on click */
-	color: black;
-}
-
-.filtertext { /* Styles text that says Filter left of the buttons */
-	padding: 10px 0px;
-	font-weight: bold;
-	font-size: 1.2em;
-	width: 100%;
-	margin: 10px 0px 10px 0px;
-}
-
-.filtertextmobile { /* Hides mobile Filter text */
-	display: none;
-
-}
-
-
-
-/* "more than 500 accomodations...." */
-.info {
-	width: 725px;
-	display: flex;
-	align-self: center;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: baseline;
-	
-
-
-}
+	.filtertextmobile { 			/* Hides mobile version */
+		display: none;
+	}
 
 
 
 
+/* ------------- i icon and 'more than 500 accommodations... ----------- */
+
+						
+	.info {							/* "more than 500 accomodations...." */
+		margin-left: 15px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: baseline;
+		width: 427px;
+		
+	}
 
 
 
-
-#icon {
-	width: 5.3px;
-	height: 5.3px;
+	 #icon {
+	font-size: 12px;
 	border-radius: 25px;
-	padding: .7em;
-	font-size: .7em;
 	color: #0065FC;
-	border: 1px solid #F2F2f2;
+	border: 1.5px solid #F2F2f2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-
+	height: 5px;
+	width: 5px;
+	padding: 9px;
 }
 
 
+	.info p {
+	font-size: 16px;
+	padding-left: 12px;	
+	}
 
+	#section12and3 {
+		width: 1400px;
 
-
-
-.info p {
-	padding: 1em;
-
-	
-	
-}
+	}
 
 
 
@@ -398,7 +400,6 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	line-height: 1px;
 	border-radius: 25px;
-	box-shadow: 3px 5px 5px #e3e3e3;
 	background-color: white;
 	border: 5px solid white;
 	margin: 10px;
@@ -538,7 +539,6 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	line-height: 1px;
 	border-radius: 25px;
-	box-shadow: 3px 5px 5px #e3e3e3;
 	background-color: white;
 	border: 5px solid white;
 	margin: 10px;
@@ -665,7 +665,6 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	line-height: 1px;
 	border-radius: 25px;
-	box-shadow: 3px 5px 5px #e3e3e3;
 	background-color: white;
 	border: 5px solid white;
 	margin: 10px;

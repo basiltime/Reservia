@@ -1,7 +1,11 @@
 body {
    font-family: 'Raleway';
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
    margin: 0px;
+   width: 100%;
 	}
 
 /* ---------------- Hover Effects (Remove section2mostpop and .section3 > div when I change divs into articles) */
@@ -10,6 +14,9 @@ article:hover {
 	transform: scale(1.007);
 }
 
+article { 
+	box-shadow: 2px 3px 20px -5px #cccccc; 
+}
 
 
 /* -- Blue #0065FC 
@@ -26,7 +33,10 @@ article:hover {
 /* ------------------ NAVIGATION BAR ----------------------*/
 
 nav {
+	
 	margin-top: 0%;
+	min-width: 1340px;
+	max-width: 1500px;
 }
 
 #mobilenav {  			/* Hides mobile nav */
@@ -46,6 +56,8 @@ li {
 	color: #0065FC;
 	padding: 3% 3% 0% 3%;
 	font-size: 16px;
+	border-top-style: solid;
+	border-top-color: #ffffff;
 }
 
 
@@ -262,6 +274,12 @@ input::placeholder { /*Styles placeholder text */
 		color: black;
 	}
 
+	.option:hover {
+		box-shadow: 2px 2px 15px -5px #cccccc; 
+		transform: scale(1.007);
+		}
+
+
 	.option {  						/* Filter button containers (includes the icon and text)  */
 
 		height: 50px;
@@ -309,16 +327,17 @@ input::placeholder { /*Styles placeholder text */
 
 
 	#icon {
-		border-radius: 25px;
-		color: #0065FC;
-		border: 1.5px solid #F2F2f2;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 5px;
-		width: 5px;
-		padding: 9px;
-	}
+	font-size: 12px;
+	border-radius: 25px;
+	color: #0065FC;
+	border: 1.5px solid #F2F2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5px;
+	width: 5px;
+	padding: 9px;
+}
 
 
 	.info p {
@@ -326,27 +345,30 @@ input::placeholder { /*Styles placeholder text */
 	padding-left: 12px;	
 	}
 
-	#section12and3 {
-		width: 1400px;
 
+/* ---------------------- Section 1, 2 and 3 -----------------------------------*/
+
+	#section12and3 {
+		min-width: 1340px;
+		max-width: 1500px;
+
+	}
+
+	#section12and3 > a {
+		height: 199px;
 	}
 
 /* ---------------------- Section 1 AND Section 2 div ------------------------- */
 
 #section1andsection2 {
 	height: 625px;
-	width: 1340px;
+	min-width: 1340px;
+	max-width: 1500px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin: 15px;
-	
-
-
-
-	
 }
-
 
 
 
@@ -361,10 +383,6 @@ input::placeholder { /*Styles placeholder text */
 	align-items: center;
 	background-color: #F2F2F2;
 	border-radius: 15px;
-
-	
-
-	
 
 }
 
@@ -385,7 +403,6 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	line-height: 1px;
 	border-radius: 25px;
-	box-shadow: 2px 2px 2px 2px #f2f2f2;
 	background-color: white;
 	border: 5px solid white;
 	margin: 16px;
@@ -396,7 +413,7 @@ input::placeholder { /*Styles placeholder text */
 
 .section1  > h1 {
 	width: 100%;
-	margin: 43px 0px 0px 40px;
+	margin: 43px 0px 15px 40px;
 	display: flex;
 	font-size: 21px;
 	font-weight: bold;
@@ -519,7 +536,7 @@ input::placeholder { /*Styles placeholder text */
 	align-self: flex-start;
 	align-items: center;
 	justify-content: space-between;
-	margin: 18px 37px 20px 37px;
+	margin: 23px 37px 20px 37px;
 
 }
 
@@ -643,24 +660,17 @@ input::placeholder { /*Styles placeholder text */
 }
  
 
-/*----------------------------------------------SECTION 3----------------------------------------------------*/
+/*---------------------------------------------- SECTION 3  Activities ---------------------------------------------------*/
 
 .section3 {
-	
-    width: 1340px;
-
-	height: 450px;
+    min-width: 1340px;
+	height: 445px;
 	display: flex;
 	flex-flow: column wrap;
-
-  align-content: space-between;
-  justify-content: space-between;
-
-  margin: 0px 20px 100px 20px;
-
+  	align-content: space-between;
+  	justify-content: space-between;
+  	margin: 0px 20px 100px 20px;
 }
-
-
 
 
 #section3headertablet {
@@ -685,13 +695,9 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	border-radius: 20px;
 	border-color: #f2f2f2;
-	box-shadow: 2px 2px 2px 2px #f2f2f2;
-
-	
-	
-
 
 }
+
 
 
 
@@ -705,11 +711,12 @@ input::placeholder { /*Styles placeholder text */
  	justify-content: flex-end;
 
 
+
 }
 
 #image1 {
   height: 100%;
-  width: 302px;
+  width: 100%;
   object-fit: cover;
   
 }
@@ -748,7 +755,7 @@ input::placeholder { /*Styles placeholder text */
 
 
   height: 164px;
-  width: 315px;
+  width: 302px;
 
   display: flex;
  	flex-direction: column;
@@ -853,7 +860,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #F2F2F2;
-	padding: 2em 2em 2em 2em;
+	padding: 20px 20px 20px 20px;
 	
 
 
@@ -862,21 +869,19 @@ footer {
 
 
 .footcolumn {
-	
+	width: 33%;
 	display: flex;
 	flex-direction: column;
-
-
-
 
 }
 
 
 .footcolumn a {
 	color: #000000;
-	padding-bottom: .75em;
+	padding-bottom: 15px;
+	font-size: 16px;
 }
 
 .footcolumn h3 {
-	font-weight: 900;
+	font-size: 19px;
 }
