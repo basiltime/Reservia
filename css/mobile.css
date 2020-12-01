@@ -27,7 +27,7 @@ article {
 
    -- Lighter Blue #DEEBFF
 
-   -- Gray #
+   -- Gray #F2F2f2
 
    -- Darker Gray (for Filter Button border) #D9D9D9
 
@@ -60,6 +60,9 @@ nav:nth-of-type(1) {
 
 }
 
+
+
+
 #logomobile {
 	margin-left: 19px;	
 
@@ -70,8 +73,10 @@ nav:nth-of-type(1) {
 	white-space: nowrap;
 	color: #0065FC;
 	font-size: 16px;
+}
 
-
+#signupmobile:hover {
+	color: black;
 }
 
 #accomandactivities {
@@ -85,6 +90,8 @@ nav:nth-of-type(1) {
 	
 }
 
+
+
 #accomandactivities > h1 {
 	width: 50%;
 	color: #0065FC;
@@ -94,19 +101,19 @@ nav:nth-of-type(1) {
 	font-weight: 10;
 }
 
-#accomandactivities > h1:nth-of-type(1) {
-	width: 50%;
-	color: #0065FC;
-	text-align: center;
-	border-bottom: 3px solid #0065FC;
-}
-
-#accomandactivities > h1:nth-of-type(2) {
+#accomandactivities > h1{
 	width: 50%;
 	color: black;
 	text-align: center;
-	border-bottom: 3px solid #f2f2f2;
-	
+	border-bottom: 3px solid #F2F2f2;
+}
+
+
+
+#accomandactivities > h1:hover {     /* Hover effects for nav links */
+	border-bottom: 3px solid #0065FC;
+	color: #0065FC;
+
 }
 /* ------------------ NAVIGATION BAR ----------------------*/
 
@@ -539,7 +546,7 @@ m;
 
 /* Star Sizing */
 .staricon {
-	margin-right: -1.5px;
+	margin-right: -3px;
 	font-size: 12px;
 }
 /*  -------------------------------  SECTION 2------------------------------------*/
@@ -651,22 +658,8 @@ m;
 	font-size: 12px;
 }
 
-#firststardiv1 {
-
-	margin-left: 20px;
-	
-}
-
-#firststardiv2 {
-
-	margin-left: 20px;
-	
-}
-
-#firststardiv3 {
-
-	margin-left: 20px;
-	
+.section2 i:nth-of-type(1) {
+	margin-left: 18px;
 }
 
 /* Section 2 gray stars */

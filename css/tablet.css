@@ -5,7 +5,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 900px;
 	}
 
 
@@ -36,6 +35,7 @@ article {
 nav {
 	
 	width: 100%;
+
 }
 
 #mobilenav {
@@ -90,35 +90,35 @@ a:active {
 /*----------------- LOGO -----------------------*/
 
 .logowrapper {
-	width: 725px;
+	width: 98%;
 	display: flex;
 	flex-flow: column nowrap;
-	margin-left: 20px;
-	
-	
+
+
 
 }
 
 #logo { /*Reservia Logo*/
-	width: 120px;
 	height: auto;
-	padding-bottom: 1em;
+	margin-bottom: 25px;
+	width: 90px;
 	
 }	
 	
 
-.underlogo {
-	line-height: 80%;
-	
 
-
+.underlogo h3 {    /* 'Find a place for your dream vacation' */
+	font-size: 20px;
+	margin: 0px 0px 8px 0px;
+	letter-spacing: .1px;
+	word-spacing: .3px;
 
 }
 
+.underlogo p {    /* 'Downtown or in nature' */
+	font-size: 15.5px;
+	margin: 0px 0px 20px 0px;
 
-.underlogo h3 {    /*---Styles header----*/
-	font-weight: 900;
-	font-weight: bold;
 }
 
 
@@ -131,7 +131,9 @@ a:active {
 	height: 50px;
 	justify-content: space-between;
 	align-self: flex-start;
-	margin-left: 50px;
+	margin-left: 1%;
+	
+
 
 }
 
@@ -228,28 +230,25 @@ input::placeholder { /*Styles placeholder text */
 
 .filters { 							/* Container for filters including filter button*/
 	display: flex;
-	align-items: center;
-	padding: 15px 15px 15px 15px;
-	margin-left: 15px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 10px 0px 0px 2%;
 	width: 100%;
-	height: 50px;
-
+	height: fit-content;
+	
+	
 }
 
 
 	.filtertext { 					/* Styles text that says Filter left of the buttons */
-		padding-right: 10px;
 		font-weight: bold;
 		font-size: 18px;
+		width: 100%;
+		margin: 10px 0px 10px 0px;
+	
 	}
 
-	.filters button {  				/* Styles the text portion of the filter buttons */
-		
-		background-color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+
 	.filters i { 					/*   Icons inside of filter buttons    */
 		color: #0065FC;
 		background-color: #DEEBFF;
@@ -278,7 +277,6 @@ input::placeholder { /*Styles placeholder text */
 	.option {  						/* Filter button containers (includes the icon and text)  */
 
 		height: 50px;
-		margin: 1em;
 		border: 2px solid #D9D9D9;
 		border-radius: 35px;
 		padding: 0px 18px 0px 0px;
@@ -290,7 +288,8 @@ input::placeholder { /*Styles placeholder text */
 	    -moz-box-sizing: border-box;
 	    -webkit-box-sizing: border-box;
 		white-space: nowrap;
-
+		background-color: white;
+		margin: 0% 1% 1% 0%;
 
 
 	}
@@ -317,12 +316,15 @@ input::placeholder { /*Styles placeholder text */
 
 						
 	.info {							/* "more than 500 accomodations...." */
-		margin-left: 15px;
+		
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: baseline;
-		width: 427px;
+		width: 100%;
+		align-self: flex-start;
+		margin: 0px 0px 18px 2%;
+
 		
 	}
 
@@ -347,10 +349,7 @@ input::placeholder { /*Styles placeholder text */
 	padding-left: 12px;	
 	}
 
-	#section12and3 {
-		width: 1400px;
 
-	}
 
 
 
@@ -360,7 +359,7 @@ input::placeholder { /*Styles placeholder text */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 750px;
+
 }
 
 
@@ -368,18 +367,14 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 1  ------------------------------ ACCOMMODATIONS ----------------  CONTAINER w/ 6 DIVS  */
 
 .section1 {
-	width: 725px;
+	width: 100%;
 	height: 625px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	align-items: center;
-	
-
-
-	
-
-	
+	justify-content: space-around;
+	border-radius: 15px;
+	background-color: #F2F2F2;
 
 }
 
@@ -387,10 +382,16 @@ input::placeholder { /*Styles placeholder text */
 
 /*  ARTICLES INSIDE OF SECTION 1  */
 
+/* Section 1 Images */
+.section1 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 
+}
 .section1 article {
-	width: 220px;
-	height: 176px;
+	width: 218px;
+	height: 200px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -402,24 +403,22 @@ input::placeholder { /*Styles placeholder text */
 	border-radius: 25px;
 	background-color: white;
 	border: 5px solid white;
-	margin: 10px;
 
+}
+
+.section1 a {
+	margin: .5%;
 }
 
 .section1  > h1 {
 	width: 100%;
 	margin: 30px 0px 20px 20px;
 	display: flex;
+	font-size: 21px;
 }
 
-/* Section 1 Images */
-.section1 img{
-	height: 100%;
-	width: 120%;
-	object-fit: cover;
-	
 
-}
+
 
 .rating {
 	display: inline;
@@ -429,22 +428,25 @@ input::placeholder { /*Styles placeholder text */
 }
 
 .rating i:nth-child(1) {
-	margin-left: 5px;
-
-
+	margin-left: 10px;
 }
 
-.section1 h3 {
-	margin-left: 5px;
-}
+.section1 h4 {
+	margin-left: 10px;
+	font-size: 16px;
+	height: 100%;
+ } 
+
 
 .section1 p {
-	margin-left: 5px;
+	margin: 0px 0px 12px 10px;
+	font-size: 15px;
 }
 
 .section1 > h3:last-of-type {
 	width: 100%;
 	margin-left: 20px;
+	font-size: 18px;
 
 }	
 
@@ -485,8 +487,9 @@ input::placeholder { /*Styles placeholder text */
 
 /* Section 2 Images */
 .section2 img {
-	height: 120px;
-	border-top-left-radius: 15px;
+	width: 100%;
+	height: 65%;
+	object-fit: cover;
 
 }
 
@@ -495,10 +498,8 @@ input::placeholder { /*Styles placeholder text */
 /*  SECTION 2 CONTAINER w/ 3 DIVS  */
 .section2 {
 	
-	width: 725px;
+	width: 100%;
 	height: 100%;
-	border-radius: 15px;
-	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -521,15 +522,17 @@ input::placeholder { /*Styles placeholder text */
 	margin: 18px 20px 20px 20px;
 }
 
-
+#section2header h1 {
+	font-size: 21px;
+}
 
 
 
 /*  DIVS INSIDE OF SECTION 2 CONTAINER  */
 
 .section2mostpop {
-	width: 220px;
-	height: 176px;
+	width: 218px;
+	height: 218px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -537,13 +540,9 @@ input::placeholder { /*Styles placeholder text */
 	flex-direction: column;
 	justify-content: flex-end;
 	overflow: hidden;
-	line-height: 1px;
 	border-radius: 25px;
 	background-color: white;
 	border: 5px solid white;
-	margin: 10px;
-
-	
 }
 
 
@@ -553,50 +552,52 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section2text {
+	height: 35%;
 	width: 200px;
-	white-space: nowrap;
-	margin-right: 15px;
-
-
+	margin: 5px 15px 5px 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 200px;
+	
 
 }
+
+.mostpopulartext {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: space-between;
+
+	height: 60px;
+}
+
+
 
 
 .section2 p {
-	
-	margin-left: .5em;
+	line-height: 0px;
+	margin-top: 0px;
+	font-size: 15px;
+	width: 200px;
+	margin-bottom: 10px;
 }
 
-.section2 h3 {
-	
-	text-indent: right;
-	margin-left: .5em;
+.section2 h4 {
+	margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 .section2text i {
-	
 	color: #0065FC;
+	margin: 5px 1px 5px 0px;
+	line-height: 0px;
 	
+
 
 }
 
-#firststardiv1 {
 
-	margin-left: .5em;
-	
-}
-
-#firststardiv2 {
-
-	margin-left: .5em;
-	
-}
-
-#firststardiv3 {
-
-	margin-left: .5em;
-	
-}
 
 /* Section 2 gray stars */
  
@@ -620,9 +621,9 @@ input::placeholder { /*Styles placeholder text */
 
 #section3headertablet {
 	width: 100%;
-	margin: 35px 20px 20px 20px;
+	margin: 30px 0px 20px 20px;
 	display: flex;
-
+	font-size: 21px;
 }
 
 #section3headerdesktop {
@@ -630,32 +631,24 @@ input::placeholder { /*Styles placeholder text */
 }
 
 .section3 {
-	
-	width: 725px;
+	width: 100%;
+	height: 550px;
 	display: flex;
   	flex-flow: row wrap;
   	justify-content: space-around;
   	align-items: center;
   	background-color: #F2F2F2;
   	border-radius: 15px;
-	margin: 25px 0px;
-	padding-bottom: 50px;
-
-}
-
-
-
-.section3 p {
-	margin-left: 1em;
+  	padding-bottom: 30px;
 }
 
 
 
 
 
-.section3 > article {  /* ---------------  SECTION 3 DIVS ---------------  */ 
-	width: 220px;
-	height: 176px;
+.section3 > article {  /* ---------------  SECTION 3 ARTICLES ---------------  */ 
+	width: 218px;
+	height: 200px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -663,32 +656,33 @@ input::placeholder { /*Styles placeholder text */
 	flex-direction: column;
 	justify-content: flex-end;
 	overflow: hidden;
-	line-height: 1px;
 	border-radius: 25px;
 	background-color: white;
 	border: 5px solid white;
-	margin: 10px;
-	overflow: hidden;
-
+	margin: .5%;
 
 }
 
 
 
 .section3 img {
-	height: 100%;
-	width: 120%;
+	height: 180px;
+	width: 100%;
 	object-fit: cover;
-
+	
 }
 
 
-#section12and3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 750px;
+
+.section3 h4 {
+	font-size: 14px;
+	margin: 0px;
+	height: 45px;
+
+}
+
+.section3 article:nth-of-type(2) img {
+	height: 200px;
 }
 
 
@@ -703,8 +697,8 @@ footer {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	background-color: #F2F2F2;
-	padding: 2em 2em 2em 8em;
-	margin-top: 75px
+	padding: 5% 5% 5% 10%;
+	margin-center: 75px;
 
 
 }
@@ -712,10 +706,10 @@ footer {
 
 
 .footcolumn {
-	
 	display: flex;
 	flex-direction: column;
-	
+	align-items: flex-start;
+	width: 32%;
 
 }
 
@@ -724,9 +718,11 @@ footer {
 
 .footcolumn a {
 	color: #000000;
-	padding-bottom: .75em;
+	padding-bottom: 15px;
 }
 
 .footcolumn h3 {
-	font-weight: 900;
+	font-size: 18px;
+	height: 2em;
+	font-weight: bold;
 }
