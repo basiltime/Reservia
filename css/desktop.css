@@ -215,11 +215,10 @@ input::placeholder { /*Styles placeholder text */
 	border-bottom-right-radius: 17px;
 	color: white;
 	border-style: none;
+	font-size: 18px;
+	
 }
 
-#search > button > p {
-	font-size: 18px;
-}
 
 
 /*-------------FILTERS---------------*/
@@ -254,7 +253,6 @@ input::placeholder { /*Styles placeholder text */
 		height: 45px;
 		width: 45px;
 		border-radius: 100%;
-		border-style: 10px solid #DEEBFF;
 		margin-right: 10px;
 		border: 2px solid #DEEBFF;
 		position: relative;
@@ -294,13 +292,11 @@ input::placeholder { /*Styles placeholder text */
 	    -moz-box-sizing: border-box;
 	    -webkit-box-sizing: border-box;
 		white-space: nowrap;
+		font-size: 17px;
+		font-weight: 600;
 
 	}
 
-	.option > p {
-		font-size: 18px;
-		font-weight: 625;
-	}
 
 
 	.filtertextmobile { 			/* Hides mobile version */
@@ -410,7 +406,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-.section1  > h1 {
+.section1  > h2 {
 	width: 100%;
 	margin: 43px 0px 15px 40px;
 	display: flex;
@@ -568,7 +564,7 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
-#section2header h1 {
+#section2header h2 {
 	font-size: 21px;
 }
 
@@ -698,7 +694,7 @@ input::placeholder { /*Styles placeholder text */
   	width: 302px;
   	display: flex;
   	flex-direction: column;
-  	align-items: left;
+  	align-items: flex-start;
  	justify-content: flex-end;
 
 
@@ -724,7 +720,7 @@ input::placeholder { /*Styles placeholder text */
 
  	display: flex;
  	flex-direction: column;
- 	align-items: left;
+ 	align-items: flex-start;
  	justify-content: flex-end;
 
 
@@ -753,7 +749,7 @@ input::placeholder { /*Styles placeholder text */
 
   display: flex;
  	flex-direction: column;
- 	align-items: left;
+ 	align-items: flex-start;
  	justify-content: flex-end;
 
 
@@ -775,7 +771,7 @@ input::placeholder { /*Styles placeholder text */
   	width: 302px;
   	display: flex;
  	flex-direction: column;
- 	align-items: left;
+ 	align-items: flex-start;
  	justify-content: flex-end;
 }
 
@@ -798,7 +794,7 @@ input::placeholder { /*Styles placeholder text */
 
   display: flex;
  	flex-direction: column;
- 	align-items: left;
+ 	align-items: flex-start;
  	justify-content: flex-end;
   
 
@@ -822,7 +818,7 @@ input::placeholder { /*Styles placeholder text */
 
   display: flex;
  	flex-direction: column;
- 	align-items: left;
+ 	align-items: flex-start;
  	justify-content: flex-end;
 }
 
