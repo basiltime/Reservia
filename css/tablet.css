@@ -5,7 +5,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-	}
+    	}
+
 
 
 
@@ -220,11 +221,10 @@ input::placeholder { /*Styles placeholder text */
 	border-bottom-right-radius: 17px;
 	color: white;
 	border-style: none;
-}
-
-#search > button > p {
 	font-size: 18px;
 }
+
+
 
 /*-------------FILTERS---------------*/
 
@@ -255,7 +255,6 @@ input::placeholder { /*Styles placeholder text */
 		height: 45px;
 		width: 45px;
 		border-radius: 100%;
-		border-style: 10px solid #DEEBFF;
 		margin-right: 10px;
 		border: 2px solid #DEEBFF;
 		position: relative;
@@ -290,14 +289,13 @@ input::placeholder { /*Styles placeholder text */
 		white-space: nowrap;
 		background-color: white;
 		margin: 0% 1% 1% 0%;
+		font-size: 17px;
+		font-weight: 600;
 
 
 	}
 
-	.option > p {
-		font-size: 18px;
-		font-weight: 625;
-	}
+
 
 	.option:hover {
 		box-shadow: 2px 2px 15px -5px #cccccc; 
@@ -376,6 +374,7 @@ input::placeholder { /*Styles placeholder text */
 	border-radius: 15px;
 	background-color: #F2F2F2;
 
+
 }
 
 
@@ -410,9 +409,9 @@ input::placeholder { /*Styles placeholder text */
 	margin: .5%;
 }
 
-.section1  > h1 {
+.section1  > h2 {
 	width: 100%;
-	margin: 30px 0px 20px 20px;
+	margin: 30px 0px 20px 4%;
 	display: flex;
 	font-size: 21px;
 }
@@ -445,7 +444,7 @@ input::placeholder { /*Styles placeholder text */
 
 .section1 > h3:last-of-type {
 	width: 100%;
-	margin-left: 20px;
+	margin-left: 4%;
 	font-size: 18px;
 
 }	
@@ -488,7 +487,7 @@ input::placeholder { /*Styles placeholder text */
 /* Section 2 Images */
 .section2 img {
 	width: 100%;
-	height: 65%;
+	height: 57%;
 	object-fit: cover;
 
 }
@@ -505,7 +504,9 @@ input::placeholder { /*Styles placeholder text */
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding-bottom: 50px;
-	
+	background-color: #F2F2F2;
+  	border-radius: 15px;
+  	margin: 60px 0px 30px 0px;
 	
 
 }
@@ -519,10 +520,11 @@ input::placeholder { /*Styles placeholder text */
 	align-self: flex-start;
 	align-items: center;
 	justify-content: space-between;
-	margin: 18px 20px 20px 20px;
+	margin: 18px 20px 20px 4%;
+	
 }
 
-#section2header h1 {
+#section2header h2 {
 	font-size: 21px;
 }
 
@@ -548,11 +550,12 @@ input::placeholder { /*Styles placeholder text */
 
 #section2header i {
 	font-size: 1.5em;
+	margin-right: 3%;
 }
 
 
 .section2text {
-	height: 35%;
+	height: 43%;
 	width: 200px;
 	margin: 5px 15px 5px 10px;
 	display: flex;
@@ -566,9 +569,8 @@ input::placeholder { /*Styles placeholder text */
 .mostpopulartext {
 	display: flex;
 	flex-direction: column;
-	align-items: left;
+	align-items: flex-start;
 	justify-content: space-between;
-
 	height: 60px;
 }
 
@@ -580,19 +582,18 @@ input::placeholder { /*Styles placeholder text */
 	margin-top: 0px;
 	font-size: 15px;
 	width: 200px;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .section2 h4 {
-	margin-block-start: 0em;
-    margin-block-end: 0em;
+	margin: 0px;
 }
 
 .section2text i {
 	color: #0065FC;
-	margin: 5px 1px 5px 0px;
+	margin: 5px 1px 0px 0px;
 	line-height: 0px;
-	
+
 
 
 }
@@ -621,7 +622,7 @@ input::placeholder { /*Styles placeholder text */
 
 #section3headertablet {
 	width: 100%;
-	margin: 30px 0px 20px 20px;
+	margin: 30px 0px 20px 5%;
 	display: flex;
 	font-size: 21px;
 }
@@ -637,8 +638,6 @@ input::placeholder { /*Styles placeholder text */
   	flex-flow: row wrap;
   	justify-content: space-around;
   	align-items: center;
-  	background-color: #F2F2F2;
-  	border-radius: 15px;
   	padding-bottom: 30px;
 }
 
@@ -658,7 +657,7 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	border-radius: 25px;
 	background-color: white;
-	border: 5px solid white;
+	
 	margin: .5%;
 
 }
@@ -666,7 +665,7 @@ input::placeholder { /*Styles placeholder text */
 
 
 .section3 img {
-	height: 180px;
+	height: 195px;
 	width: 100%;
 	object-fit: cover;
 	
@@ -676,8 +675,8 @@ input::placeholder { /*Styles placeholder text */
 
 .section3 h4 {
 	font-size: 14px;
-	margin: 0px;
-	height: 45px;
+	margin: 0px 0px 0px 12px;
+	padding: 15px 0px 15px 0px;
 
 }
 
@@ -692,14 +691,14 @@ footer {
 	
 	display: flex;
 	flex-direction: column;
-	height: 200px;
+	height: 240px;
 	width: 100%;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: center;
 	background-color: #F2F2F2;
-	padding: 5% 5% 5% 10%;
-	margin-center: 75px;
-
+	margin-top: 40px;
+	
 
 }
 
@@ -708,8 +707,10 @@ footer {
 .footcolumn {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	width: 32%;
+	align-items: center;
+	width: 240px;
+	height: 200px;
+	margin-top: 40px;
 
 }
 
@@ -719,10 +720,13 @@ footer {
 .footcolumn a {
 	color: #000000;
 	padding-bottom: 15px;
+	align-self: center;
+	font-size: 15px;
+
 }
 
 .footcolumn h3 {
-	font-size: 18px;
+	font-size: 17px;
 	height: 2em;
 	font-weight: bold;
 }
