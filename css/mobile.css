@@ -9,7 +9,7 @@ body {
 	}
 
 
-/* ---------------- Hover Effects (Remove section2mostpop and .section3 > div when I change divs into articles) */
+/* ---------------- Hover Effects ----------------- */
 
 article:hover {
 	transform: scale(1.007);
@@ -20,6 +20,10 @@ article {
 	box-shadow: 2px 3px 20px -5px #cccccc; 
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
 
 
 
@@ -65,7 +69,6 @@ nav:nth-of-type(1) {
 
 #logomobile {
 	margin-left: 19px;	
-
 }
 
 #signupmobile {
@@ -85,14 +88,12 @@ nav:nth-of-type(1) {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 12px;
-	
-	
+	margin-top: 12px;	
 }
 
 
 
-#accomandactivities > h2 {
+#accomandactivities > a {
 	width: 50%;
 	color: #0065FC;
 	text-align: center;
@@ -101,7 +102,7 @@ nav:nth-of-type(1) {
 	
 }
 
-#accomandactivities > h2{
+#accomandactivities > a{
 	width: 50%;
 	color: black;
 	text-align: center;
@@ -111,65 +112,12 @@ nav:nth-of-type(1) {
 
 
 
-#accomandactivities > h2:hover {     /* Hover effects for nav links */
+#accomandactivities > a:hover {     /* Hover effects for nav links */
 	border-bottom: 3px solid #0065FC;
 	color: #0065FC;
 
 }
-/* ------------------ NAVIGATION BAR ----------------------*/
 
-ul {
-	display: flex;
-	height: 100px;
-	list-style: none;
-	align-items: flex-end;
-	padding-left: 0;
-
-}
-
-
-a {
-	text-decoration: none;
-	color: #0065FC;
-}
-
-
-
-li:hover {
-
-	border-top-style: solid;
-	border-top-color: #0065FC;
-}
-
-
-
-a:visited {
-
-	color: #000000;
-}
-
-
-
-a:active {
-	color: #000000;
-}
-
-
-
-.underlogo h3 {   /* Text under the logo and nav */
-	width: 375px;
-	font-size: 22px;
-	font-weight: 700;
-	margin: 20px 20px 20px 50px;
-	letter-spacing: -0.5px;
-	
-}
-
-.underlogo p {
-	
-	margin: 0px 0px 30px 50px;
-	font-weight: 100;
-}
 
 /*-------------SEARCH BAR-----------------------*/
 
