@@ -8,7 +8,7 @@ body {
    width: 100%;
 	}
 
-/* ---------------- Hover Effects (Remove section2mostpop and .section3 > div when I change divs into articles) */
+
 
 article:hover {
 	transform: scale(1.007);
