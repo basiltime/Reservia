@@ -24,16 +24,9 @@ a {
 	color: black;
 }
 
-/* -- Blue #0065FC 
 
-   -- Lighter Blue #DEEBFF
+/* ------------------ MOBILE NAV ----------------------*/
 
-   -- Gray #F2F2f2
-
-   -- Darker Gray (for Filter Button border) #D9D9D9
-
-----------------------*/
-/* ------------------ MOBILE NAV --------------------*/
 
 nav:nth-of-type(1) {
 	display: none;
