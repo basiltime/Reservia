@@ -6,49 +6,48 @@ body {
 	align-items: center;
 	min-width: 320px;
 	margin: 0px;
-	}
 
-/* ---------------- Hover Effects ---------------- */
-
-article:hover {
-	transform: scale(1.007);
 }
-
 
 article { 
 	box-shadow: 2px 3px 20px -5px #cccccc; 
 }
 
 
+article:hover {
+	transform: scale(1.007);
+}
+
+
 a {
 	text-decoration: none;
+
+}
+
+
+a:visited {
 	color: black;
 }
 
 
+p {
+	font-weight: 400;
+	
+}
 
-/*    Colors
-
-   -- Blue #0065FC 
-
-   -- Lighter Blue #DEEBFF
-
-   -- Gray #F2F2f2
-
-   -- Darker Gray (for Filter Button border) #D9D9D9
-
-----------------------*/
-
-
-/* ------------------ MOBILE NAV ----------------------*/
+/*  Nav  */
 
 nav:nth-of-type(1) {
 	display: none;
+
 }
+
 
 #logo { 
 	display: none;
+
 }
+
 
 #mobilenav {
 	display: flex;
@@ -67,22 +66,26 @@ nav:nth-of-type(1) {
 }
 
 
-
-
 #logomobile {
-	margin-left: 19px;	
+	margin-left: 19px;
+
 }
+
 
 #signupmobile {
 	margin-right: 18px;
 	white-space: nowrap;
 	color: #0065FC;
 	font-size: 16px;
+
 }
+
 
 #signupmobile:hover {
 	color: black;
+
 }
+
 
 #accomandactivities {
 	width: 375px;
@@ -90,9 +93,9 @@ nav:nth-of-type(1) {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 12px;	
-}
+	margin-top: 32px;	
 
+}
 
 
 #accomandactivities > a {
@@ -104,6 +107,7 @@ nav:nth-of-type(1) {
 	
 }
 
+
 #accomandactivities > a{
 	width: 50%;
 	color: black;
@@ -113,7 +117,6 @@ nav:nth-of-type(1) {
 }
 
 
-
 #accomandactivities > a:hover {     /* Hover effects for nav links */
 	border-bottom: 3px solid #0065FC;
 	color: #0065FC;
@@ -121,7 +124,7 @@ nav:nth-of-type(1) {
 }
 
 
-/*-------------SEARCH BAR-----------------------*/
+/*  Search Bar  */
 
 #search {
 	width: 100%;
@@ -134,16 +137,16 @@ nav:nth-of-type(1) {
     -webkit-box-sizing: border-box;
 	border-radius: 15px;
 	
-
 }
 
 
 /* Hides desktop search button */
+
 .searchbutton {              
 	display: none;
 }
 
-/*---------- Map Icon ------------*/
+/*  Map Icon  */
 
 #search i {
 	box-sizing: border-box;
@@ -164,10 +167,9 @@ nav:nth-of-type(1) {
 	left: 0px;
 	flex-shrink: 0;
 	
-
 }
 
-/*---------- Input Box ------------*/
+/*  Input Box */
 
 #search input { /* Styles input box */
 	box-sizing: border-box;
@@ -186,21 +188,17 @@ nav:nth-of-type(1) {
 	border-style: none;
 	outline: none;
 	
-	
-
-	
-
 }
 
-input:focus { /*Gets rid of default outline and borders on click */
+
+input:focus { /*  Gets rid of default outline and borders on click  */
 	border-style: none;
 	outline: none;
-	
-	
+
 }
 
 
-input::placeholder { /*Styles placeholder text */
+input::placeholder { /*  Styles placeholder text  */
 	text-indent: 17px;
 	color: black;
 	font-weight: 600;
@@ -208,7 +206,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-/*---------- Search Button------------*/
+/*  Search button*/
 
 #search i:last-of-type {
 	color: white;
@@ -218,8 +216,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-
-/*-------------FILTERS---------------*/
+/*  Filters  */
 
 .filtertextmobile { /* Styles text that says Filter left of the buttons */
 
@@ -257,11 +254,8 @@ input::placeholder { /*Styles placeholder text */
 	align-items: center;
 	justify-content: center;
 
+}
 
-
-
-
-	}
 
 .option {  /* Filter button containers (includes the icon and text)  */
 	margin: 7px 0px 7px 0px;
@@ -279,52 +273,56 @@ input::placeholder { /*Styles placeholder text */
 
 .option:nth-of-type(1) {  /* Low Cost */
 	padding-right: 18px;
+
 }
 
-.option:nth-of-type(2) { /* Family-Friendly */
-	
-}
 
 .option:nth-of-type(3) { /* Romatic */
-	
 	padding-right: 31px;
 	order: 4;
 	position: relative;
 	left: -34px;
+
 }
 
-.option:nth-of-type(4) { /* Pets allowed */
+.option:nth-of-type(4) { /*  Pets allowed  */
 	padding-right: 56px;
 	order: 3;
+
 }
 
-.filters button {  /* Styles the text portion of the filter buttons */
+
+.filters button {  /*  Styles the text portion of the filter buttons  */
 	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 16px;
 	font-weight: bold;
+
 }
 
 
-.option:active { /* Keeps text black on click */
+.option:active { /*  Keeps text black on click  */
 	color: black;
+
 }
 
 .option:hover {
-		box-shadow: 2px 2px 15px -5px #cccccc; 
-		transform: scale(1.007);
-		}
+	box-shadow: 2px 2px 15px -5px #cccccc; 
+	transform: scale(1.007);
+
+}
 
 .filtertext {
 	display: none;
+
 }
 
 
 /* "more than 500 accomodations...." */
+
 .info {
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -333,14 +331,7 @@ input::placeholder { /*Styles placeholder text */
 	
 }
 
-
-
-
-
-
-/*    This is the i icon    */
-
-
+/*  i icon  */
 
 #icon {
 	font-size: 12px;
@@ -353,6 +344,7 @@ input::placeholder { /*Styles placeholder text */
 	height: 5px;
 	width: 5px;
 	padding: 9px;
+
 }
 
 
@@ -360,29 +352,29 @@ input::placeholder { /*Styles placeholder text */
 .info {
 	display: flex;
 	margin: 10px 0px 18px 0px;
-	}
+
+}
 
 
 .info p {
 	font-size: 15px;
 	padding-left: 12px;	
 	width: 300px;
+
 }
 
 
-/* ---------------------- Section 1, 2 and 3 Div ------------------------- */
+/*  Sections 1 and 2 container  */
 
 #section1andsection2 { 
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+
 }
 
 
-
-
-
-/*  SECTION 1  -------- ACCOMMODATIONS ---------  CONTAINER w/ 6 DIVS  */
+/*  Section 1 container with 6 articles  */
 
 .section1 {
 	width: 375px;
@@ -396,9 +388,7 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-
-/*  ARTICLES INSIDE OF SECTION 1  */
-
+/*  Articles inside of section 1  */
 
 .section1 article {
 	width: 334px;
@@ -415,38 +405,39 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
-
 .section1 h2 {
 	width: 100%;
 	margin: 41px 0px 10px 20px;
 	font-size: 21px;
 	font-weight: 700;
 
-
 }
 
 
 /* Section 1 Images */
+
 .section1 img{
 	height: 65%;
 	width: 100%;
 	object-fit: cover;
-	
 
 }
+
 
 .rating {
 	display: inline;
 	margin-top: 1px;
 	color: #0065FC;
 	margin-bottom: 5px;
+
 }
+
 
 .rating i:nth-child(1) {
 	margin-left: 10px;
 
-
 }
+
 
 /* Section 1 h4 and p inside of article */
 
@@ -456,11 +447,14 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
+
 .section1 p {
 	margin-left: 5px;
 	font-size: 14px;
 	margin: 5px 0px 0px 10px;
+
 }
+
 
 .section1 > h4:last-of-type {
 	width: 100%;
@@ -480,25 +474,28 @@ input::placeholder { /*Styles placeholder text */
 #Lesmouettes> i:nth-of-type(5) {
 	color: #dedede;
 	
-
 }
+
 
 #delamar> i:nth-of-type(n+4) {
 	color: #dedede;
 	
-
 }
+
 
 #aubergelepanier > i:nth-of-type(5) {
 	color: #dedede;
 }
 
+
 /* Star Sizing */
+
 .staricon {
 	margin-right: -3px;
 	font-size: 12px;
 }
-/*  -------------------------------  SECTION 2------------------------------------*/
+
+/*  Section 2  */
 
 
 /* Section 2 Images */
@@ -510,7 +507,8 @@ input::placeholder { /*Styles placeholder text */
 
 
 
-/*  SECTION 2 CONTAINER w/ 3 DIVS  */
+/*  Section 2 container with 3 articles  */
+
 .section2 {
 	height: 100%;
 	width: 375px;
@@ -521,9 +519,8 @@ input::placeholder { /*Styles placeholder text */
 	align-items: center;
 	padding-bottom: 27px;
 
-	
-
 }
+
 
 /*  SECTION 2 "MOST POPULAR" text with chart icon  */
 
@@ -536,6 +533,7 @@ input::placeholder { /*Styles placeholder text */
 	margin-top: 30px;
 }
 
+
 #section2header h2 {
 	margin-left: 20px;
 	font-size: 21px;
@@ -544,10 +542,9 @@ input::placeholder { /*Styles placeholder text */
 }
 
 
+/*  Section 2 articles  */
 
-
-/*  DIVS INSIDE OF SECTION 2 CONTAINER  */
-.section2mostpop {
+.section2 article {
 	height: 144px;
 	width: 334px;
 	margin: 9px 9px 0px 9px;
@@ -560,14 +557,19 @@ input::placeholder { /*Styles placeholder text */
 	
 }
 
+
 .section2 div:nth-of-type(4){
 	margin-bottom: 10px;
+
 }
+
 
 .section2 img {
 	width: 132px;
 	object-fit: cover;
+
 }
+
 
 #section2header i {
 	font-size: 23px;
@@ -589,12 +591,14 @@ input::placeholder { /*Styles placeholder text */
 	font-weight: 700;
 	margin: 13px 0px 0px 18px;
 	height: 35px;
+
 }
 
 
 .section2 p {
 	font-size: 15px;
 	margin: 13px 0px 0px 18px;
+
 }
 
 
@@ -604,10 +608,12 @@ input::placeholder { /*Styles placeholder text */
 	margin-top: 45px;
 	margin-right: -3px;
 	font-size: 12px;
+
 }
 
 .section2 i:nth-of-type(1) {
 	margin-left: 18px;
+
 }
 
 /* Section 2 gray stars */
@@ -617,22 +623,26 @@ input::placeholder { /*Styles placeholder text */
 
 }
 
+
 #bedandbreakfast > i:nth-of-type(5) {
 	color: #dedede;
 
 }
+
 
 #toutbleu > i:nth-of-type(5) {
 	color: #dedede;
 
 }
 
+
 .section1 h3 {
 	width: 395px;
 	margin-left: 20px;
+
 }
 
-/*----------------------------------------------SECTION 3----------------------------------------------------*/
+/*  Section 3  */
 
 .section3 {
 	width: 375px;
@@ -640,24 +650,23 @@ input::placeholder { /*Styles placeholder text */
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
+
 }
 
 #section3headertablet {
 	width: 375px;
 	margin-left: 40px;
 	margin-top: 40px;
+
 }
 
 #section3headerdesktop {
 	display: none;
+
 }
 
 
-
-
-
-
-.section3 article {  /*------------------- Articles -------------------*/ 
+.section3 article {  
   	height: 190px;
   	width: 334px;
   	display: flex;
@@ -667,14 +676,17 @@ input::placeholder { /*Styles placeholder text */
 	overflow: hidden;
 	margin-bottom: 24px;
 	border-radius: 20px;
+
 }
+
 
 .section3 img {
   height: 140px;  
   width: 334px;
-  
   object-fit: cover;
+
 }
+
 
 .section3 h4 {
 	height: 51px;
@@ -683,18 +695,17 @@ input::placeholder { /*Styles placeholder text */
 	margin: 0px 0px 0px 15px;
 	display: flex;
 	align-items: center;
+
 }
+
 
 .section3 h2 {
 	font-size: 21px;
 	margin-bottom: 30px;
+
 }
 
-
-
-
-
-/*-------------------------FOOTER--------------------------*/
+/*  Footer  */
 footer {
 	display: flex;
 	flex-direction: row;
@@ -704,8 +715,8 @@ footer {
 	font-size: 16px;
 	height: 485px;
 	margin-top: 47px;
-}
 
+}
 
 
 .footcolumn {
@@ -724,34 +735,43 @@ footer {
 
 }
 
+
 #footercolumn2 {
 	margin: 0px 0px 44px 28px; 
 	padding: 0px;
+
 }
+
 
 #footercolumn3 {
 	margin: 0px 0px 44px 28px;
 	padding: 0px; 
+
 }
+
 
 .footcolumn a {
 	color: #000000;
 	padding-bottom: 13px;
+	font-weight: 400;
 
 }
+
 
 .footcolumn a:first-of-type {
 	margin-top: 19px;
 	
 }
+
+
 .footcolumn h3 {
 	font-weight: 900;
 	margin: 0px;
+
 }
+
 
 .footcolumn a:last-of-type {
 	padding-bottom: 0px;
+
 }
-
-
-
