@@ -4,8 +4,7 @@ body {
     flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-width: 320px;
-	max-width: 100%;
+	width: 100%;
 	margin: 0px;
 
 }
@@ -44,37 +43,38 @@ nav:nth-of-type(1) {
 }
 
 
-#logo { 
+#logo {  /* hides logo for desktop and tablet */
 	display: none;
 
 }
 
 
+
+
 #mobilenav {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	
 }
 
 #logoandsignuplink {
-	width: 375px;
+	width: 89%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
+	align-self: center;
 	margin-top: 16px;
 
-}
-
-
-#logomobile {
-	margin-left: 19px;
 
 }
+
+
+
 
 
 #signupmobile {
-	margin-right: 18px;
 	white-space: nowrap;
 	color: #0065FC;
 	font-size: 16px;
@@ -89,7 +89,7 @@ nav:nth-of-type(1) {
 
 
 #accomandactivities {
-	width: 375px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -100,16 +100,29 @@ nav:nth-of-type(1) {
 
 .underlogo h3 {
 	font-size: 21px;
-	width: 340px;
 	margin-bottom: 0px;
+	
 }
 
 .underlogo p {
 	margin-top: 10px;
+
 }
 
 .underlogo {
-	margin-bottom: 31px;
+	width: 100%;
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.logowrapper {
+	width: 89%;
+	max-width: 342px;
+	display: flex;
+	flex-direction: row;
+
 }
 
 
@@ -135,12 +148,14 @@ nav:nth-of-type(1) {
 
 #search {
 	display: flex;
-	border-top: .2px solid #F2F2f2;
-	border-bottom: .2px solid #F2F2f2;
+	border-top: .5px solid #f2f2f2;
+	border-bottom: .5px solid #f2f2f2;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	border-radius: 15px;
+	width: 89%;
+	max-width: 342px;
 
 
 }
@@ -181,7 +196,8 @@ nav:nth-of-type(1) {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-	width: 245px;
+	width: 74%;
+	max-width: 300px;
 	height: 51px;
 	background-color: #ffffff;
 	margin: 0px;
@@ -193,6 +209,7 @@ nav:nth-of-type(1) {
 	font-size: 18px;
 	border-style: none;
 	outline: none;
+
 	
 }
 
@@ -227,22 +244,23 @@ input::placeholder { /*  Styles placeholder text  */
 .filtertextmobile { /* Styles text that says Filter left of the buttons */
 
 	font-weight: bold;
-	width: 100%; 
+	width: 89%;
+	max-width: 342px;
 	height: 22px;
 	margin: 36px 0px 16px 4%;
 	font-size: 18px;
-	margin-left: 24px;
+	
 	
 }
 
 
 .filters { /* Container for filters including filter button*/
-	width: 100%; height: 192px;
+	width: 342px;
+	height: 192px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	justify-content: flex-start;
-	margin-left: 24px;
+	
 }	
 
 
@@ -273,6 +291,7 @@ input::placeholder { /*  Styles placeholder text  */
 	justify-content: center;
 	align-items: center;
 	width: fit-content;
+	width: -moz-fit-content;
 	height: 50px;
 	
 }
@@ -281,6 +300,7 @@ input::placeholder { /*  Styles placeholder text  */
 .option:nth-of-type(1) {  /* Low Cost */
 	padding-right: 18px;
 
+
 }
 
 
@@ -288,7 +308,7 @@ input::placeholder { /*  Styles placeholder text  */
 	padding-right: 31px;
 	order: 4;
 	position: relative;
-	left: -34px;
+	left: -45px;
 
 }
 
@@ -299,11 +319,9 @@ input::placeholder { /*  Styles placeholder text  */
 }
 
 
+
 .filters button {  /*  Styles the text portion of the filter buttons  */
 	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: 16px;
 	font-weight: bold;
 
@@ -334,8 +352,8 @@ input::placeholder { /*  Styles placeholder text  */
 	flex-direction: row;
 	justify-content: center;
 	align-items: baseline;
-	width: 100%;
-	
+	width: 89%;
+	margin: 17px 0px 17px 0px;
 }
 
 /*  i icon  */
@@ -355,18 +373,10 @@ input::placeholder { /*  Styles placeholder text  */
 }
 
 
-
-.info {
-	display: flex;
-	margin: 10px 0px 18px 0px;
-
-}
-
-
 .info p {
 	font-size: 15px;
-	padding-left: 12px;	
-	width: 300px;
+	margin-left: 10px;
+
 
 }
 
@@ -384,7 +394,7 @@ input::placeholder { /*  Styles placeholder text  */
 /*  Section 1 container with 6 articles  */
 
 .section1 {
-	width: 375px;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -413,12 +423,14 @@ input::placeholder { /*  Styles placeholder text  */
 
 
 .section1 h2 {
-	width: 100%;
-	margin: 41px 0px 10px 20px;
+	width: 334px;
+	margin: 41px 0px 10px 0px;
 	font-size: 21px;
 	font-weight: 700;
 
 }
+
+
 
 
 /* Section 1 Images */
@@ -494,6 +506,10 @@ input::placeholder { /*  Styles placeholder text  */
 	color: #dedede;
 }
 
+.section1 h3 {
+	width: 334px;
+
+}
 
 /* Star Sizing */
 
@@ -517,14 +533,13 @@ input::placeholder { /*  Styles placeholder text  */
 /*  Section 2 container with 3 articles  */
 
 .section2 {
-	height: 100%;
-	width: 375px;
+	width: 100%;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding-bottom: 27px;
+	padding-bottom: 38px;
 
 }
 
@@ -532,7 +547,8 @@ input::placeholder { /*  Styles placeholder text  */
 /*  SECTION 2 "MOST POPULAR" text with chart icon  */
 
 #section2header {
-	width: 375px;
+	width: 334px;
+	margin: 41px 0px 10px 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -542,7 +558,6 @@ input::placeholder { /*  Styles placeholder text  */
 
 
 #section2header h2 {
-	margin-left: 20px;
 	font-size: 21px;
 	font-weight: 700;
 	
@@ -580,7 +595,7 @@ input::placeholder { /*  Styles placeholder text  */
 
 #section2header i {
 	font-size: 23px;
-	margin-right: 18px;
+	
 	
 }
 
@@ -643,16 +658,12 @@ input::placeholder { /*  Styles placeholder text  */
 }
 
 
-.section1 h3 {
-	width: 395px;
-	margin-left: 20px;
 
-}
 
 /*  Section 3  */
 
 .section3 {
-	width: 375px;
+	width: 100%;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -715,9 +726,12 @@ input::placeholder { /*  Styles placeholder text  */
 /*  Footer  */
 footer {
 	display: flex;
-	flex-direction: row;
-	width: 375px;
-	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+
 	background-color: #F2F2F2;
 	font-size: 16px;
 	height: 485px;
@@ -727,7 +741,7 @@ footer {
 
 
 .footcolumn {
-	width: 375px;
+	width: 334px;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
@@ -737,21 +751,21 @@ footer {
 
 
 #footercolumn1 {
-	margin: 47px 0px 44px 28px;
+	margin: 47px 0px 44px 0px;
 	padding: 0px;
 
 }
 
 
 #footercolumn2 {
-	margin: 0px 0px 44px 28px; 
+	margin: 0px 0px 44px 0px; 
 	padding: 0px;
 
 }
 
 
 #footercolumn3 {
-	margin: 0px 0px 44px 28px;
+	margin: 0px 0px 44px 0px;
 	padding: 0px; 
 
 }
