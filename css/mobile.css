@@ -5,6 +5,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-width: 320px;
+	max-width: 100%;
 	margin: 0px;
 
 }
@@ -93,27 +94,33 @@ nav:nth-of-type(1) {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	margin-top: 32px;	
+	margin: 42px 0px 15px 0px;	
 
+}
+
+.underlogo h3 {
+	font-size: 21px;
+	width: 340px;
+	margin-bottom: 0px;
+}
+
+.underlogo p {
+	margin-top: 10px;
+}
+
+.underlogo {
+	margin-bottom: 31px;
 }
 
 
 #accomandactivities > a {
 	width: 50%;
-	color: #0065FC;
-	text-align: center;
-	padding-bottom: 15px;
-	font-size: 16px;
-	
-}
-
-
-#accomandactivities > a{
-	width: 50%;
 	color: black;
 	text-align: center;
 	border-bottom: 3px solid #F2F2f2;
+	padding-bottom: 15px;
 	font-size: 16px;
+
 }
 
 
@@ -127,16 +134,15 @@ nav:nth-of-type(1) {
 /*  Search Bar  */
 
 #search {
-	width: 100%;
 	display: flex;
-	width: 334px;
 	border-top: .2px solid #F2F2f2;
 	border-bottom: .2px solid #F2F2f2;
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 	border-radius: 15px;
-	
+
+
 }
 
 
@@ -221,21 +227,22 @@ input::placeholder { /*  Styles placeholder text  */
 .filtertextmobile { /* Styles text that says Filter left of the buttons */
 
 	font-weight: bold;
-	width: 337px; height: 22px;
-	margin: 36px 0px 16px 0px;
+	width: 100%; 
+	height: 22px;
+	margin: 36px 0px 16px 4%;
 	font-size: 18px;
+	margin-left: 24px;
 	
 }
 
 
 .filters { /* Container for filters including filter button*/
-	
-	width: 337px; height: 192px;
+	width: 100%; height: 192px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: flex-start;
-	
+	margin-left: 24px;
 }	
 
 
