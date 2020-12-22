@@ -35,6 +35,10 @@ p {
 	
 }
 
+.price {
+	font-weight:600;
+}
+
 /*  Nav  */
 
 nav:nth-of-type(1) {

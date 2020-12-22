@@ -8,7 +8,6 @@ body {
     width: 100%;
 }
 
-
 article { 
 	box-shadow: 2px 3px 20px -5px #cccccc; 
 }
@@ -36,6 +35,10 @@ p {
 }
 
 
+.price {
+	font-weight:600;
+}
+
 
 /* -- Blue #0065FC 
 
@@ -47,10 +50,45 @@ p {
 
 */
 
+/*  Wrapper for everything above the sections */
+
+#top {
+	min-width: 1350px;
+	width: 100%;
+    max-width: 1500px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+}
+
+/*  Wrapper for everything in body */
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+
+}
+
+/*  Wrapper for section 1 and section 2  */
+
+#section1andsection2 {
+	min-width: 1350px;
+	width: 100%;
+    max-width: 1500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
 
 /*  Nav  */
 
 nav {
+	width: 100%;
 	max-width: 1500px;
 	
 }
@@ -98,9 +136,10 @@ li:hover {
 /*  Logo and text under the logo  */
 
 .logowrapper {
-	margin-left: 15px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
+	
 }
 
 
@@ -127,7 +166,6 @@ li:hover {
 
 #search {
 	display: flex;
-	margin-left: 10px;
 	width: 380px;
 	height: 50px;
 	justify-content: space-between;
@@ -219,11 +257,12 @@ input::placeholder {
 
 /*  Wrapper for buttons and text  */
 
-.filters { 							
+.filters { 
+	width: 100%;
+	max-width: 1500px;							
 	display: flex;
 	align-items: center;
-	padding: 15px 15px 15px 15px;
-	margin-left: 15px;
+	padding: 15px 0px 15px 0px;
 	width: 100%;
 	height: 50px;
 
@@ -313,13 +352,12 @@ input::placeholder {
 /* "more than 500 accomodations...." */
 
 .info {							
-	margin-left: 15px;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: baseline;
 	width: 427px;
-		
+
 }
 
 	#icon {
@@ -334,6 +372,7 @@ input::placeholder {
 	width: 5px;
 	padding: 9px;
 
+
 }
 
 
@@ -344,30 +383,12 @@ input::placeholder {
 }
 
 
-/*  Main (Section 1, 2 and 3)  */
-
-main {
-	min-width: 1340px;
-	max-width: 1500px;
-
-}
-
 main > a {
 	height: 199px;
 	
 }
 
-/*  Section 1 and 2 wrapper  */
 
-#section1andsection2 {
-	height: 625px;
-	min-width: 1340px;
-	max-width: 1500px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 15px;
-}
 
 
 
@@ -627,6 +648,7 @@ main > a {
 
 .section3 {
     min-width: 1340px;
+    width: 100%;
     max-width: 1500px;
 	height: 445px;
 	display: flex;
@@ -645,9 +667,11 @@ main > a {
 
 
 #section3headerdesktop {
-	width: 100%;
+	min-width: 1340px;
+    width: 100%;
+    max-width: 1500px;
 	font-size: 21px;
-	margin: 60px 0px 20px 20px;
+	margin: 60px 0px 20px 15px;
 }
 
 
@@ -787,23 +811,23 @@ main > a {
 /*  Footer  */
 
 footer {
-	float: left;
 	display: flex;
 	flex-direction: column;
 	height: 218px;
-	width: 1500px;
+	width: 105%;
+	max-width: 1600px;
 	flex-wrap: wrap;
-	justify-content: space-between;
 	background-color: #F2F2F2;
 	padding: 20px 20px 20px 20px;
-	
+
 }
 
 
 .footcolumn {
-	width: 33%;
+	width: 23%;
 	display: flex;
 	flex-direction: column;
+	margin-left: 50px;
 
 }
 
@@ -813,6 +837,7 @@ footer {
 	padding-bottom: 15px;
 	font-size: 16px;
 	font-weight: 400;
+
 }
 
 
