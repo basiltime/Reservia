@@ -54,6 +54,9 @@ p {
 }
 
 /* Top section- includes nav, search bar, filters etc */ 
+nav a {
+	color: #0065FC !important;
+}
 
 header {
 	width: 100%;

@@ -24,7 +24,7 @@ article:hover {
 
 a {
 	text-decoration: none;
-
+	color: #0065FC;
 }
 
 
@@ -88,14 +88,6 @@ main {
 	align-items: flex-start;
 	flex-wrap: wrap;
 
-}
-
-/*  Nav  */
-
-nav {
-
-
-	
 }
 
 
